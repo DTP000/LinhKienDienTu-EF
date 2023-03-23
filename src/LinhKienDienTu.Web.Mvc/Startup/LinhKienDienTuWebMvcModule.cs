@@ -20,7 +20,9 @@ namespace LinhKienDienTu.Web.Startup
 
         public override void PreInitialize()
         {
+            Configuration.MultiTenancy.IsEnabled = false;
             Configuration.Navigation.Providers.Add<LinhKienDienTuNavigationProvider>();
+            Configuration.BackgroundJobs.IsJobExecutionEnabled = false;
         }
 
         public override void Initialize()

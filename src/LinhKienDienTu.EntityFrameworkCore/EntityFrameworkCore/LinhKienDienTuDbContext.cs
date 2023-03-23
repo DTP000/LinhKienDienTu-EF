@@ -10,9 +10,10 @@ namespace LinhKienDienTu.EntityFrameworkCore
     {
         /* Define a DbSet for each entity of the application */
         
+
         public LinhKienDienTuDbContext(DbContextOptions<LinhKienDienTuDbContext> options)
             : base(options)
         {
         }
-    }
+
 }
