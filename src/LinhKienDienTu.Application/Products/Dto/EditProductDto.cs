@@ -16,6 +16,7 @@ namespace LinhKienDienTu.Products.Dto
         public long Price { get; set; }
         [DefaultValue(0)]
         public int Quantity { get; set; }
+        public string UrlImage { get; set; }
         public string Descr { get; set; }
         [DefaultValue(0)]
         public int CategoryId { get; set; }

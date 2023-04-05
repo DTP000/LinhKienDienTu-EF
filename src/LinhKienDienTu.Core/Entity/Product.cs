@@ -24,6 +24,8 @@ namespace LinhKienDienTu.Entity
         [DefaultValue(0)]
         public IsDeleted IsDeleted { get; set; }
 
+        public string UrlImage { get; set; }
+
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
