@@ -60,7 +60,7 @@ namespace LinhKienDienTu.Web.Startup
                         L("Category"),
                         url: "Category",
                         icon: "fas fa-list",
-                        requiresAuthentication: true
+                        permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Roles)
                     )
                 )
                 ;
