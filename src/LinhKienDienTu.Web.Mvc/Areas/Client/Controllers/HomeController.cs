@@ -4,7 +4,7 @@ using LinhKienDienTu.Controllers;
 
 namespace LinhKienDienTu.Web.Client.Controllers
 {
-
+    [Area("Client")]
     public class HomeController : LinhKienDienTuControllerBase
     {
         public ActionResult Index()

@@ -7052,3 +7052,599 @@ INFO  2023-04-05 16:09:30,429 [3    ] Mvc.Infrastructure.ContentResultExecutor -
 INFO  2023-04-05 16:09:30,433 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 548.0702ms
 INFO  2023-04-05 16:09:30,436 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
 INFO  2023-04-05 16:09:30,442 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638163077444890297 - - - 200 11709 application/x-javascript 705.7745ms
+DEBUG 2023-04-05 21:29:46,413 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2023-04-05 21:29:46,575 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2023-04-05 21:29:46,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LinhKienDienTu.Web.Startup.LinhKienDienTuWebMvcModule, LinhKienDienTu.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,629 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LinhKienDienTu.LinhKienDienTuWebCoreModule, LinhKienDienTu.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,629 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LinhKienDienTu.LinhKienDienTuApplicationModule, LinhKienDienTu.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,630 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LinhKienDienTu.LinhKienDienTuCoreModule, LinhKienDienTu.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,631 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,631 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,632 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LinhKienDienTu.EntityFrameworkCore.LinhKienDienTuEntityFrameworkModule, LinhKienDienTu.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,638 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,639 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=7.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:46,648 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2023-04-05 21:29:46,880 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-04-05 21:29:46,883 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-04-05 21:29:46,883 [1    ] o.Configuration.LanguageManagementConfig - Converted LinhKienDienTu (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-04-05 21:29:46,883 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-04-05 21:29:48,269 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: LinhKienDienTu.EntityFrameworkCore.LinhKienDienTuDbContext, LinhKienDienTu.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-04-05 21:29:48,978 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2023-04-05 21:29:49,085 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2023-04-05 21:29:49,123 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2023-04-05 21:29:49,127 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: LinhKienDienTu
+DEBUG 2023-04-05 21:29:49,137 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2023-04-05 21:29:49,320 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2023-04-05 21:29:49,320 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2023-04-05 21:29:49,334 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Users.Dto.CreateUserDto
+DEBUG 2023-04-05 21:29:49,336 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Users.Dto.UserDto
+DEBUG 2023-04-05 21:29:49,337 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2023-04-05 21:29:49,338 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Sessions.Dto.UserLoginInfoDto
+DEBUG 2023-04-05 21:29:49,338 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Roles.Dto.PermissionDto
+DEBUG 2023-04-05 21:29:49,338 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2023-04-05 21:29:49,338 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.MultiTenancy.Dto.TenantDto
+DEBUG 2023-04-05 21:29:49,338 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2023-04-05 21:29:49,338 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2023-04-05 21:29:49,339 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Web.Models.Categories.CategoryListViewModel
+DEBUG 2023-04-05 21:29:49,339 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Web.Models.Categories.CreateCategoryModalViewModel
+DEBUG 2023-04-05 21:29:49,339 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LinhKienDienTu.Web.Models.Categories.EditCategoryModalViewModel
+WARN  2023-04-05 21:29:53,520 [1    ] oft.EntityFrameworkCore.Model.Validation - Entity 'Edition' has a global query filter defined and is the required end of a relationship with the entity 'EditionFeatureSetting'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+WARN  2023-04-05 21:29:53,523 [1    ] oft.EntityFrameworkCore.Model.Validation - Entity 'User' has a global query filter defined and is the required end of a relationship with the entity 'Order'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+INFO  2023-04-05 21:29:54,326 [1    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:29:56,460 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`DisplayName`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`
+FROM `AbpEditions` AS `a`
+WHERE `a`.`Name` = 'Standard'
+LIMIT 1
+INFO  2023-04-05 21:29:56,984 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (47ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `AbpLanguages` AS `a`
+    WHERE `a`.`TenantId` IS NULL AND (`a`.`Name` = @__language_Name_1))
+INFO  2023-04-05 21:29:57,001 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `AbpLanguages` AS `a`
+    WHERE `a`.`TenantId` IS NULL AND (`a`.`Name` = @__language_Name_1))
+INFO  2023-04-05 21:29:57,020 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`Description`, `a`.`DisplayName`, `a`.`IsDefault`, `a`.`IsDeleted`, `a`.`IsStatic`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`NormalizedName`, `a`.`TenantId`
+FROM `AbpRoles` AS `a`
+WHERE `a`.`TenantId` IS NULL AND (`a`.`Name` = 'Admin')
+LIMIT 1
+INFO  2023-04-05 21:29:57,212 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__adminRoleForHost_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Name`
+FROM `AbpPermissions` AS `a`
+WHERE (`a`.`Discriminator` = 'RolePermissionSetting') AND (`a`.`TenantId` IS NULL AND (`a`.`RoleId` = @__adminRoleForHost_Id_0))
+INFO  2023-04-05 21:29:57,234 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`AuthenticationSource`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`EmailAddress`, `a`.`EmailConfirmationCode`, `a`.`IsActive`, `a`.`IsDeleted`, `a`.`IsEmailConfirmed`, `a`.`IsLockoutEnabled`, `a`.`IsPhoneNumberConfirmed`, `a`.`IsTwoFactorEnabled`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`LockoutEndDateUtc`, `a`.`Name`, `a`.`NormalizedEmailAddress`, `a`.`NormalizedUserName`, `a`.`Password`, `a`.`PasswordResetCode`, `a`.`PhoneNumber`, `a`.`SecurityStamp`, `a`.`Surname`, `a`.`TenantId`, `a`.`UserName`
+FROM `AbpUsers` AS `a`
+WHERE `a`.`TenantId` IS NULL AND (`a`.`UserName` = 'admin')
+LIMIT 1
+INFO  2023-04-05 21:29:57,493 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `AbpSettings` AS `a`
+    WHERE ((`a`.`Name` = @__name_0) AND `a`.`TenantId` IS NULL) AND `a`.`UserId` IS NULL)
+INFO  2023-04-05 21:29:57,498 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `AbpSettings` AS `a`
+    WHERE ((`a`.`Name` = @__name_0) AND `a`.`TenantId` IS NULL) AND `a`.`UserId` IS NULL)
+INFO  2023-04-05 21:29:57,506 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `AbpSettings` AS `a`
+    WHERE ((`a`.`Name` = @__name_0) AND `a`.`TenantId` IS NULL) AND `a`.`UserId` IS NULL)
+INFO  2023-04-05 21:29:57,760 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ConnectionString`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`EditionId`, `a`.`IsActive`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`TenancyName`
+FROM `AbpTenants` AS `a`
+WHERE `a`.`TenancyName` = 'Default'
+LIMIT 1
+INFO  2023-04-05 21:29:57,848 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@___tenantId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`Description`, `a`.`DisplayName`, `a`.`IsDefault`, `a`.`IsDeleted`, `a`.`IsStatic`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`NormalizedName`, `a`.`TenantId`
+FROM `AbpRoles` AS `a`
+WHERE (`a`.`TenantId` = @___tenantId_0) AND (`a`.`Name` = 'Admin')
+LIMIT 1
+INFO  2023-04-05 21:29:57,863 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@___tenantId_0='?' (DbType = Int32), @__adminRole_Id_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Name`
+FROM `AbpPermissions` AS `a`
+WHERE (`a`.`Discriminator` = 'RolePermissionSetting') AND ((`a`.`TenantId` = @___tenantId_0) AND (`a`.`RoleId` = @__adminRole_Id_1))
+INFO  2023-04-05 21:29:57,883 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@___tenantId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`AuthenticationSource`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`EmailAddress`, `a`.`EmailConfirmationCode`, `a`.`IsActive`, `a`.`IsDeleted`, `a`.`IsEmailConfirmed`, `a`.`IsLockoutEnabled`, `a`.`IsPhoneNumberConfirmed`, `a`.`IsTwoFactorEnabled`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`LockoutEndDateUtc`, `a`.`Name`, `a`.`NormalizedEmailAddress`, `a`.`NormalizedUserName`, `a`.`Password`, `a`.`PasswordResetCode`, `a`.`PhoneNumber`, `a`.`SecurityStamp`, `a`.`Surname`, `a`.`TenantId`, `a`.`UserName`
+FROM `AbpUsers` AS `a`
+WHERE (`a`.`TenantId` = @___tenantId_0) AND (`a`.`UserName` = 'admin')
+LIMIT 1
+INFO  2023-04-05 21:29:58,056 [1    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:29:58,123 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`DisplayName`, `a`.`Icon`, `a`.`IsDeleted`, `a`.`IsDisabled`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`TenantId`
+FROM `AbpLanguages` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (@__ef_filter__p_1 OR (`a`.`TenantId` IS NULL))
+INFO  2023-04-05 21:29:58,350 [1    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:29:58,386 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ConnectionString`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`EditionId`, `a`.`IsActive`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`TenancyName`
+FROM `AbpTenants` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__p_0)
+LIMIT 1
+INFO  2023-04-05 21:29:58,397 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`DisplayName`, `a`.`Icon`, `a`.`IsDeleted`, `a`.`IsDisabled`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`TenantId`
+FROM `AbpLanguages` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (@__ef_filter__p_1 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_2))
+INFO  2023-04-05 21:29:58,424 [1    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:29:58,442 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__tenantId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`TenantId`, `a`.`UserId`, `a`.`Value`
+FROM `AbpSettings` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (`a`.`UserId` IS NULL AND (`a`.`TenantId` = @__tenantId_1))
+INFO  2023-04-05 21:29:58,472 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,vi
+INFO  2023-04-05 21:30:00,212 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2023-04-05 21:30:00,214 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2023-04-05 21:30:00,216 [1    ] Microsoft.Hosting.Lifetime               - Content root path: D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc
+INFO  2023-04-05 21:30:00,256 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/ - -
+INFO  2023-04-05 21:30:00,585 [3    ] uthorization.DefaultAuthorizationService - Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+INFO  2023-04-05 21:30:00,601 [3    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2023-04-05 21:30:00,679 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Account/Login?ReturnUrl=%2F - -
+INFO  2023-04-05 21:30:00,693 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/ - - - 302 - - 441.9684ms
+INFO  2023-04-05 21:30:00,717 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LinhKienDienTu.Web.Controllers.AccountController.Login (LinhKienDienTu.Web.Mvc)'
+INFO  2023-04-05 21:30:00,821 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String, System.String) on controller LinhKienDienTu.Web.Controllers.AccountController (LinhKienDienTu.Web.Mvc).
+INFO  2023-04-05 21:30:02,895 [5    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:03,338 [5    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (30ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `AbpAuditLogs` (`BrowserInfo`, `ClientIpAddress`, `ClientName`, `CustomData`, `Exception`, `ExceptionMessage`, `ExecutionDuration`, `ExecutionTime`, `ImpersonatorTenantId`, `ImpersonatorUserId`, `MethodName`, `Parameters`, `ReturnValue`, `ServiceName`, `TenantId`, `UserId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+SELECT `Id`
+FROM `AbpAuditLogs`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+INFO  2023-04-05 21:30:19,735 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2023-04-05 21:30:19,937 [5    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:19,952 [5    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:19,962 [5    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:19,969 [5    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:23,918 [15   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 19852.8228ms.
+INFO  2023-04-05 21:30:23,934 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action LinhKienDienTu.Web.Controllers.AccountController.Login (LinhKienDienTu.Web.Mvc) in 23109.0089ms
+INFO  2023-04-05 21:30:23,938 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LinhKienDienTu.Web.Controllers.AccountController.Login (LinhKienDienTu.Web.Mvc)'
+INFO  2023-04-05 21:30:24,066 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 23387.8716ms
+INFO  2023-04-05 21:30:24,366 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638163269891554460 - -
+INFO  2023-04-05 21:30:24,386 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638163269891554460 - -
+INFO  2023-04-05 21:30:24,391 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-04-05 21:30:24,397 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:24,489 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:24,570 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-04-05 21:30:24,613 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 172.4834ms
+INFO  2023-04-05 21:30:24,779 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-04-05 21:30:24,873 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-04-05 21:30:24,992 [19   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:25,213 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,305 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,346 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,369 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,405 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,447 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,478 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,496 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 905.6193ms
+INFO  2023-04-05 21:30:25,499 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,508 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,517 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,526 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,530 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,539 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` IS NULL)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,550 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @___sourceName_0='?' (Size = 128), @__CultureInfo_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Key`, `a`.`LanguageName`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Source`, `a`.`TenantId`, `a`.`Value`
+FROM `AbpLanguageTexts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND ((`a`.`Source` = @___sourceName_0) AND (`a`.`LanguageName` = @__CultureInfo_Name_1))
+INFO  2023-04-05 21:30:25,687 [8    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-04-05 21:30:25,697 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 1119.3203ms
+INFO  2023-04-05 21:30:25,710 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:25,733 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638163269891554460 - - - 200 11709 application/x-javascript 1348.8394ms
+INFO  2023-04-05 21:30:25,761 [19   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-04-05 21:30:25,770 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 889.4167ms
+INFO  2023-04-05 21:30:25,774 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:25,788 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638163269891554460 - - - 200 15648 application/x-javascript;+charset=utf-8 1422.1542ms
+INFO  2023-04-05 21:30:33,109 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Account/Login?ReturnUrl=%2F - -
+INFO  2023-04-05 21:30:33,229 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LinhKienDienTu.Web.Controllers.AccountController.Login (LinhKienDienTu.Web.Mvc)'
+INFO  2023-04-05 21:30:33,265 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String, System.String) on controller LinhKienDienTu.Web.Controllers.AccountController (LinhKienDienTu.Web.Mvc).
+INFO  2023-04-05 21:30:33,309 [19   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:33,385 [19   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (43ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `AbpAuditLogs` (`BrowserInfo`, `ClientIpAddress`, `ClientName`, `CustomData`, `Exception`, `ExceptionMessage`, `ExecutionDuration`, `ExecutionTime`, `ImpersonatorTenantId`, `ImpersonatorUserId`, `MethodName`, `Parameters`, `ReturnValue`, `ServiceName`, `TenantId`, `UserId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+SELECT `Id`
+FROM `AbpAuditLogs`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+INFO  2023-04-05 21:30:33,595 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2023-04-05 21:30:33,632 [14   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 38.8024ms.
+INFO  2023-04-05 21:30:33,637 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action LinhKienDienTu.Web.Controllers.AccountController.Login (LinhKienDienTu.Web.Mvc) in 366.7782ms
+INFO  2023-04-05 21:30:33,645 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LinhKienDienTu.Web.Controllers.AccountController.Login (LinhKienDienTu.Web.Mvc)'
+INFO  2023-04-05 21:30:33,664 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 557.2230ms
+INFO  2023-04-05 21:30:33,934 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Account/_Layout.css?v=pk1udUQR7bqKUWFxSnrnIl0MM8MH2Wu05p-zpysBQWI - -
+INFO  2023-04-05 21:30:33,940 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638163269891554460 - -
+INFO  2023-04-05 21:30:33,956 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638163269891554460 - -
+INFO  2023-04-05 21:30:34,069 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:34,085 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-04-05 21:30:34,088 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-04-05 21:30:34,098 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Account/Login.js?v=KxhHl3HYb-UQucT7TN2ewhzzgV_WwxRaGwGaSiT8xzM - -
+INFO  2023-04-05 21:30:34,104 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-04-05 21:30:34,108 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 140.0720ms
+INFO  2023-04-05 21:30:34,116 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 20.782ms
+INFO  2023-04-05 21:30:34,119 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:34,130 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638163269891554460 - - - 200 11709 application/x-javascript 188.4063ms
+INFO  2023-04-05 21:30:34,135 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:34,139 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-04-05 21:30:34,168 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\view-resources\Views\Account\Login.js'
+INFO  2023-04-05 21:30:34,177 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Account/Login.js?v=KxhHl3HYb-UQucT7TN2ewhzzgV_WwxRaGwGaSiT8xzM - - - 200 484 application/javascript 214.0733ms
+INFO  2023-04-05 21:30:34,216 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/_Layout.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\view-resources\Views\Account\_Layout.css'
+INFO  2023-04-05 21:30:34,224 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-04-05 21:30:34,229 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Account/_Layout.css?v=pk1udUQR7bqKUWFxSnrnIl0MM8MH2Wu05p-zpysBQWI - - - 200 211 text/css 318.8227ms
+INFO  2023-04-05 21:30:34,364 [5    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:34,376 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 143.8720ms
+INFO  2023-04-05 21:30:34,868 [3    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (135ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`AuthenticationSource`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`EmailAddress`, `a`.`EmailConfirmationCode`, `a`.`IsActive`, `a`.`IsDeleted`, `a`.`IsEmailConfirmed`, `a`.`IsLockoutEnabled`, `a`.`IsPhoneNumberConfirmed`, `a`.`IsTwoFactorEnabled`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`LockoutEndDateUtc`, `a`.`Name`, `a`.`NormalizedEmailAddress`, `a`.`NormalizedUserName`, `a`.`Password`, `a`.`PasswordResetCode`, `a`.`PhoneNumber`, `a`.`SecurityStamp`, `a`.`Surname`, `a`.`TenantId`, `a`.`UserName`
+FROM `AbpUsers` AS `a`
+WHERE ((@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (@__ef_filter__p_1 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_2))) AND (`a`.`Id` = @__p_0)
+LIMIT 1
+INFO  2023-04-05 21:30:35,197 [5    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_2='?' (DbType = Boolean), @__ef_filter__p_3='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_4='?' (DbType = Int32), @__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__user_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT `t`.`Name`
+FROM `AbpUserRoles` AS `a`
+INNER JOIN (
+    SELECT `a0`.`Id`, `a0`.`Name`
+    FROM `AbpRoles` AS `a0`
+    WHERE (@__ef_filter__p_2 OR NOT (`a0`.`IsDeleted`)) AND (@__ef_filter__p_3 OR (`a0`.`TenantId` = @__ef_filter__CurrentTenantId_4))
+) AS `t` ON `a`.`RoleId` = `t`.`Id`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (`a`.`UserId` = @__user_Id_0)
+INFO  2023-04-05 21:30:35,264 [24   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__ef_filter__p_3='?' (DbType = Boolean), @__ef_filter__p_4='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_5='?' (DbType = Int32), @__ef_filter__p_6='?' (DbType = Boolean), @__ef_filter__p_7='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_8='?' (DbType = Int32), @__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__user_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT `t0`.`Name`
+FROM `AbpUserOrganizationUnits` AS `a`
+INNER JOIN (
+    SELECT `a0`.`OrganizationUnitId`, `a0`.`RoleId`
+    FROM `AbpOrganizationUnitRoles` AS `a0`
+    WHERE (@__ef_filter__p_3 OR NOT (`a0`.`IsDeleted`)) AND (@__ef_filter__p_4 OR (`a0`.`TenantId` = @__ef_filter__CurrentTenantId_5))
+) AS `t` ON `a`.`OrganizationUnitId` = `t`.`OrganizationUnitId`
+INNER JOIN (
+    SELECT `a1`.`Id`, `a1`.`Name`
+    FROM `AbpRoles` AS `a1`
+    WHERE (@__ef_filter__p_6 OR NOT (`a1`.`IsDeleted`)) AND (@__ef_filter__p_7 OR (`a1`.`TenantId` = @__ef_filter__CurrentTenantId_8))
+) AS `t0` ON `t`.`RoleId` = `t0`.`Id`
+WHERE ((@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (@__ef_filter__p_1 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_2))) AND (`a`.`UserId` = @__user_Id_0)
+INFO  2023-04-05 21:30:35,377 [5    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__normalizedName_0='?' (Size = 32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`Description`, `a`.`DisplayName`, `a`.`IsDefault`, `a`.`IsDeleted`, `a`.`IsStatic`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`NormalizedName`, `a`.`TenantId`
+FROM `AbpRoles` AS `a`
+WHERE ((@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (@__ef_filter__p_1 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_2))) AND (`a`.`NormalizedName` = @__normalizedName_0)
+LIMIT 1
+INFO  2023-04-05 21:30:35,457 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Discriminator`, `a`.`IsGranted`, `a`.`Name`, `a`.`TenantId`, `a`.`UserId`
+FROM `AbpPermissions` AS `a`
+WHERE ((`a`.`Discriminator` = 'UserPermissionSetting') AND (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1))) AND (`a`.`UserId` = @__userId_0)
+INFO  2023-04-05 21:30:35,803 [7    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`Description`, `a`.`DisplayName`, `a`.`IsDefault`, `a`.`IsDeleted`, `a`.`IsStatic`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`NormalizedName`, `a`.`TenantId`
+FROM `AbpRoles` AS `a`
+WHERE ((@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (@__ef_filter__p_1 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_2))) AND (`a`.`Id` = @__p_0)
+LIMIT 1
+INFO  2023-04-05 21:30:35,869 [24   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__roleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`Discriminator`, `a`.`IsGranted`, `a`.`Name`, `a`.`TenantId`, `a`.`RoleId`
+FROM `AbpPermissions` AS `a`
+WHERE ((`a`.`Discriminator` = 'RolePermissionSetting') AND (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1))) AND (`a`.`RoleId` = @__roleId_0)
+WARN  2023-04-05 21:30:36,060 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Category' in localization source 'LinhKienDienTu'!
+INFO  2023-04-05 21:30:36,123 [3    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__userId_0='?' (DbType = Int64), @__tenantId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`TenantId`, `a`.`UserId`, `a`.`Value`
+FROM `AbpSettings` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND ((`a`.`UserId` = @__userId_0) AND (`a`.`TenantId` = @__tenantId_1))
+INFO  2023-04-05 21:30:36,168 [19   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-04-05 21:30:36,174 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 2030.9251ms
+INFO  2023-04-05 21:30:36,177 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:36,182 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638163269891554460 - - - 200 17017 application/x-javascript;+charset=utf-8 2242.9807ms
+INFO  2023-04-05 21:30:36,953 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/ - -
+INFO  2023-04-05 21:30:36,970 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LinhKienDienTu.Web.Controllers.HomeController.Index (LinhKienDienTu.Web.Mvc)'
+INFO  2023-04-05 21:30:36,982 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LinhKienDienTu.Web.Controllers.HomeController (LinhKienDienTu.Web.Mvc).
+INFO  2023-04-05 21:30:37,057 [19   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:37,078 [3    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `AbpAuditLogs` (`BrowserInfo`, `ClientIpAddress`, `ClientName`, `CustomData`, `Exception`, `ExceptionMessage`, `ExecutionDuration`, `ExecutionTime`, `ImpersonatorTenantId`, `ImpersonatorUserId`, `MethodName`, `Parameters`, `ReturnValue`, `ServiceName`, `TenantId`, `UserId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+SELECT `Id`
+FROM `AbpAuditLogs`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+INFO  2023-04-05 21:30:37,586 [3    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2023-04-05 21:30:39,293 [3    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:39,474 [20   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ConnectionString`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`EditionId`, `a`.`IsActive`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`TenancyName`
+FROM `AbpTenants` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__p_0)
+LIMIT 1
+INFO  2023-04-05 21:30:39,537 [20   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:39,582 [20   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`AuthenticationSource`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`EmailAddress`, `a`.`EmailConfirmationCode`, `a`.`IsActive`, `a`.`IsDeleted`, `a`.`IsEmailConfirmed`, `a`.`IsLockoutEnabled`, `a`.`IsPhoneNumberConfirmed`, `a`.`IsTwoFactorEnabled`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`LockoutEndDateUtc`, `a`.`Name`, `a`.`NormalizedEmailAddress`, `a`.`NormalizedUserName`, `a`.`Password`, `a`.`PasswordResetCode`, `a`.`PhoneNumber`, `a`.`SecurityStamp`, `a`.`Surname`, `a`.`TenantId`, `a`.`UserName`
+FROM `AbpUsers` AS `a`
+WHERE ((@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (@__ef_filter__p_1 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_2))) AND (`a`.`Id` = @__p_0)
+LIMIT 1
+INFO  2023-04-05 21:30:40,409 [20   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:40,426 [5    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ConnectionString`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`EditionId`, `a`.`IsActive`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`Name`, `a`.`TenancyName`
+FROM `AbpTenants` AS `a`
+WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__p_0)
+LIMIT 1
+INFO  2023-04-05 21:30:40,433 [5    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:40,446 [5    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`AuthenticationSource`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorUserId`, `a`.`DeleterUserId`, `a`.`DeletionTime`, `a`.`EmailAddress`, `a`.`EmailConfirmationCode`, `a`.`IsActive`, `a`.`IsDeleted`, `a`.`IsEmailConfirmed`, `a`.`IsLockoutEnabled`, `a`.`IsPhoneNumberConfirmed`, `a`.`IsTwoFactorEnabled`, `a`.`LastModificationTime`, `a`.`LastModifierUserId`, `a`.`LockoutEndDateUtc`, `a`.`Name`, `a`.`NormalizedEmailAddress`, `a`.`NormalizedUserName`, `a`.`Password`, `a`.`PasswordResetCode`, `a`.`PhoneNumber`, `a`.`SecurityStamp`, `a`.`Surname`, `a`.`TenantId`, `a`.`UserName`
+FROM `AbpUsers` AS `a`
+WHERE ((@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (@__ef_filter__p_1 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_2))) AND (`a`.`Id` = @__p_0)
+LIMIT 1
+WARN  2023-04-05 21:30:40,665 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'Category' in localization source 'LinhKienDienTu'!
+INFO  2023-04-05 21:30:42,592 [3    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 5504.7051ms.
+INFO  2023-04-05 21:30:42,595 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action LinhKienDienTu.Web.Controllers.HomeController.Index (LinhKienDienTu.Web.Mvc) in 5610.6435ms
+INFO  2023-04-05 21:30:42,603 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LinhKienDienTu.Web.Controllers.HomeController.Index (LinhKienDienTu.Web.Mvc)'
+INFO  2023-04-05 21:30:42,628 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/ - - - 200 - text/html;+charset=utf-8 5689.8836ms
+INFO  2023-04-05 21:30:43,026 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/helpers.min.js?v=kSjRuWZBH1TVTvCfVxaAQlKq_JbwxeM864-Qq1bEPUE - -
+INFO  2023-04-05 21:30:43,032 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/datatables.ajax.min.js?v=5j2eOMHYIMF79je8GeR2DyqDip36ydsldEMjOB-7Wvg - -
+INFO  2023-04-05 21:30:43,046 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638163269891554460 - -
+INFO  2023-04-05 21:30:43,063 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638163269891554460 - -
+INFO  2023-04-05 21:30:43,075 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-04-05 21:30:43,105 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-04-05 21:30:43,129 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:43,134 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/_Bundles/helpers.min.js was not modified
+INFO  2023-04-05 21:30:43,142 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/_Bundles/datatables.ajax.min.js was not modified
+INFO  2023-04-05 21:30:43,185 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-04-05 21:30:43,199 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/helpers.min.js?v=kSjRuWZBH1TVTvCfVxaAQlKq_JbwxeM864-Qq1bEPUE - - - 304 - application/javascript 145.8196ms
+INFO  2023-04-05 21:30:43,201 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/datatables.ajax.min.js?v=5j2eOMHYIMF79je8GeR2DyqDip36ydsldEMjOB-7Wvg - - - 304 - application/javascript 135.7723ms
+INFO  2023-04-05 21:30:43,209 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:43,219 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-04-05 21:30:43,313 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-04-05 21:30:43,336 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 54.6013ms
+WARN  2023-04-05 21:30:43,338 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Category' in localization source 'LinhKienDienTu'!
+INFO  2023-04-05 21:30:43,346 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 122.2145ms
+INFO  2023-04-05 21:30:43,351 [19   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-04-05 21:30:43,415 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:43,433 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638163269891554460 - - - 200 11709 application/x-javascript 393.8782ms
+INFO  2023-04-05 21:30:43,447 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2023-04-05 21:30:43,460 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 398.4120ms
+INFO  2023-04-05 21:30:43,463 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2023-04-05 21:30:43,468 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 123.9263ms
+INFO  2023-04-05 21:30:43,473 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:43,489 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638163269891554460 - - - 200 17017 application/x-javascript;+charset=utf-8 451.3171ms
+INFO  2023-04-05 21:30:43,534 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2023-04-05 21:30:43,560 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate text/plain;charset=UTF-8 0 - 200 273 application/json 110.0031ms
+INFO  2023-04-05 21:30:43,569 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=MViHTsoLfimult_xoZpnag - -
+INFO  2023-04-05 21:30:43,586 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2023-04-05 21:30:43,997 [3    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"MViHTsoLfimult_xoZpnag","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2023-04-05T21:30:43.960271+07:00","Properties":{}}
+DEBUG 2023-04-05 21:30:44,064 [3    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: MViHTsoLfimult_xoZpnag
+INFO  2023-04-05 21:30:49,072 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/ - -
+INFO  2023-04-05 21:30:49,079 [26   ] uthorization.DefaultAuthorizationService - Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+INFO  2023-04-05 21:30:49,088 [26   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2023-04-05 21:30:49,097 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/ - - - 302 - - 25.5275ms
+INFO  2023-04-05 21:30:49,110 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Account/Login?ReturnUrl=%2F - -
+INFO  2023-04-05 21:30:49,119 [26   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LinhKienDienTu.Web.Controllers.AccountController.Login (LinhKienDienTu.Web.Mvc)'
+INFO  2023-04-05 21:30:49,188 [26   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String, System.String) on controller LinhKienDienTu.Web.Controllers.AccountController (LinhKienDienTu.Web.Mvc).
+INFO  2023-04-05 21:30:49,212 [26   ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:30:49,230 [20   ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `AbpAuditLogs` (`BrowserInfo`, `ClientIpAddress`, `ClientName`, `CustomData`, `Exception`, `ExceptionMessage`, `ExecutionDuration`, `ExecutionTime`, `ImpersonatorTenantId`, `ImpersonatorUserId`, `MethodName`, `Parameters`, `ReturnValue`, `ServiceName`, `TenantId`, `UserId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+SELECT `Id`
+FROM `AbpAuditLogs`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+INFO  2023-04-05 21:30:49,246 [24   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2023-04-05 21:30:49,266 [15   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 21.9173ms.
+INFO  2023-04-05 21:30:49,272 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action LinhKienDienTu.Web.Controllers.AccountController.Login (LinhKienDienTu.Web.Mvc) in 78.3088ms
+INFO  2023-04-05 21:30:49,275 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LinhKienDienTu.Web.Controllers.AccountController.Login (LinhKienDienTu.Web.Mvc)'
+INFO  2023-04-05 21:30:49,341 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 184.7743ms
+INFO  2023-04-05 21:30:49,441 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/font-awesome/css/all.min.css?v=2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y - -
+INFO  2023-04-05 21:30:49,447 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/icheck-bootstrap/icheck-bootstrap.css?v=nGN1DgpDTrAS3DS7E5J0cL-gblWBKAMSoU_LSuY8gu8 - -
+INFO  2023-04-05 21:30:49,452 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/css/adminlte.min.css?v=FQ-k0mIFfWXVTaW1arh3qKx8IXX5Bm5f6QG-0pkUjaE - -
+INFO  2023-04-05 21:30:49,457 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Account/_Layout.css?v=pk1udUQR7bqKUWFxSnrnIl0MM8MH2Wu05p-zpysBQWI - -
+INFO  2023-04-05 21:30:49,461 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/css/style.css?v=xKbbeRspeJ53pjKRA3Bh5ZJLItu8Y58wlf6cER1IiIk - -
+INFO  2023-04-05 21:30:49,482 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/bootstrap/dist/js/bootstrap.bundle.js?v=Qesn0fIyfJA0VfGtzm0Kga5Ro9eCzokdNoMPke7bSxE - -
+INFO  2023-04-05 21:30:49,513 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/jquery/jquery.js?v=WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU - -
+INFO  2023-04-05 21:30:49,528 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/_Layout.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\view-resources\Views\Account\_Layout.css'
+INFO  2023-04-05 21:30:49,534 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/icheck-bootstrap/icheck-bootstrap.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\icheck-bootstrap\icheck-bootstrap.css'
+INFO  2023-04-05 21:30:49,542 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/block-ui/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc - -
+INFO  2023-04-05 21:30:49,548 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Account/_Layout.css?v=pk1udUQR7bqKUWFxSnrnIl0MM8MH2Wu05p-zpysBQWI - - - 200 211 text/css 88.0422ms
+INFO  2023-04-05 21:30:49,555 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/icheck-bootstrap/icheck-bootstrap.css?v=nGN1DgpDTrAS3DS7E5J0cL-gblWBKAMSoU_LSuY8gu8 - - - 200 14967 text/css 114.8531ms
+INFO  2023-04-05 21:30:49,565 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/js/adminlte.js?v=u48IADL1yBFYTA8PqnxogL0B9HfOVI3frq0ow7V5r_M - -
+INFO  2023-04-05 21:30:49,580 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs-ext/spin/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k - -
+INFO  2023-04-05 21:30:49,590 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/sweetalert/sweetalert.min.js?v=KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms - -
+INFO  2023-04-05 21:30:49,596 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/toastr/toastr.min.js?v=yNbKY1y6h2rbVcQtf0b8lq4a-xpktyFc3pSYoGAY1qQ - -
+INFO  2023-04-05 21:30:49,622 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/moment/moment-with-locales.js?v=dgFbqbQVzjkZPQxWd8PBtzGiRBhChc4I2wO_q_s-Xeo - -
+INFO  2023-04-05 21:30:49,627 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/abp.js?v=3lLIPNQoGBxv9DWxtKwnvHr7Wlov-D0jo-NtjAdTenA - -
+INFO  2023-04-05 21:30:49,633 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=MEOC0fqxBbFCeeJ6VHFuw8-2C710gCRqjbvYcHoBdHU - -
+INFO  2023-04-05 21:30:49,639 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs-ext/spin/jquery.spin.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs-ext\spin\jquery.spin.js'
+INFO  2023-04-05 21:30:49,647 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/toastr/toastr.min.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\toastr\toastr.min.js'
+INFO  2023-04-05 21:30:49,655 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=i3fsIGh0z3DXDbSa7f6TwsWonuZ8-OwELSrtH1jHbDA - -
+INFO  2023-04-05 21:30:49,662 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/toastr/toastr.min.js?v=yNbKY1y6h2rbVcQtf0b8lq4a-xpktyFc3pSYoGAY1qQ - - - 200 5251 application/javascript 67.7500ms
+INFO  2023-04-05 21:30:49,668 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2023-04-05 21:30:49,680 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.min.css?v=D9O-28vCF-qJh2qZSFIXxXc30hTED8RmnKeZRyvVEpA - -
+INFO  2023-04-05 21:30:49,701 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs-ext/spin/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k - - - 200 1776 application/javascript 84.8881ms
+INFO  2023-04-05 21:30:49,707 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/toastr/toastr.css?v=He3QEBKoL_nMXlVsoM7S2C2kjFQqS5L-mgA-F8LpG-U - -
+INFO  2023-04-05 21:30:49,714 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=MEOC0fqxBbFCeeJ6VHFuw8-2C710gCRqjbvYcHoBdHU - - - 200 9495 application/javascript 66.5455ms
+INFO  2023-04-05 21:30:49,721 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2023-04-05 21:30:49,732 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/spin/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0 - -
+INFO  2023-04-05 21:30:49,749 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/jquery-validate/jquery.validate.js?v=xLhce0FUawd11QSwrvXSwST0oHhOolNoH9cUXAcsIAg - -
+INFO  2023-04-05 21:30:49,757 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/toastr/toastr.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\toastr\toastr.css'
+INFO  2023-04-05 21:30:49,764 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.min.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs-ext\famfamfam-flags\dist\sprite\famfamfam-flags.min.css'
+INFO  2023-04-05 21:30:49,771 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/toastr/toastr.css?v=He3QEBKoL_nMXlVsoM7S2C2kjFQqS5L-mgA-F8LpG-U - - - 200 7575 text/css 64.1727ms
+INFO  2023-04-05 21:30:49,776 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.min.css?v=D9O-28vCF-qJh2qZSFIXxXc30hTED8RmnKeZRyvVEpA - - - 200 19009 text/css 104.3706ms
+INFO  2023-04-05 21:30:49,792 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/js/main.js?v=CNNK_CKzNy_78At6VgUNJ9DSKZRvvKiLqcw169rqmOA - -
+INFO  2023-04-05 21:30:49,797 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/jquery-validate/localization/messages_vi.min.js?v=uWirS5WiGEtyqNWddch8ng1dInMgwhpcSX5uCEdJ0EA - -
+INFO  2023-04-05 21:30:49,807 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=vMuHbqHh635SKL2RG2qsGGCDyHg1yFeGqhPKpS34g4k - -
+INFO  2023-04-05 21:30:49,825 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/spin/spin.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\spin\spin.js'
+INFO  2023-04-05 21:30:49,829 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638163269891554460 - -
+INFO  2023-04-05 21:30:49,836 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/main.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\js\main.js'
+INFO  2023-04-05 21:30:49,844 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/spin/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0 - - - 200 11607 application/javascript 111.4713ms
+INFO  2023-04-05 21:30:49,862 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:49,878 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/js/main.js?v=CNNK_CKzNy_78At6VgUNJ9DSKZRvvKiLqcw169rqmOA - - - 200 4003 application/javascript 69.6447ms
+INFO  2023-04-05 21:30:49,896 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638163269891554460 - -
+INFO  2023-04-05 21:30:49,906 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2023-04-05 21:30:49,914 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/sweetalert/sweetalert.min.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\sweetalert\sweetalert.min.js'
+INFO  2023-04-05 21:30:49,924 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/jquery-validate/localization/messages_vi.min.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\jquery-validate\localization\messages_vi.min.js'
+INFO  2023-04-05 21:30:49,930 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\css\style.css'
+INFO  2023-04-05 21:30:49,940 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/jquery-validate/localization/messages_vi.min.js?v=uWirS5WiGEtyqNWddch8ng1dInMgwhpcSX5uCEdJ0EA - - - 200 1151 application/javascript 143.2240ms
+INFO  2023-04-05 21:30:49,955 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2023-04-05 21:30:49,969 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/abp.js?v=3lLIPNQoGBxv9DWxtKwnvHr7Wlov-D0jo-NtjAdTenA - - - 200 29160 application/javascript 333.2395ms
+INFO  2023-04-05 21:30:49,990 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2023-04-05 21:30:49,997 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2023-04-05 21:30:50,003 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/css/style.css?v=xKbbeRspeJ53pjKRA3Bh5ZJLItu8Y58wlf6cER1IiIk - - - 200 557 text/css 499.6474ms
+INFO  2023-04-05 21:30:50,008 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 53.6284ms
+INFO  2023-04-05 21:30:50,021 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=i3fsIGh0z3DXDbSa7f6TwsWonuZ8-OwELSrtH1jHbDA - - - 200 1459 application/javascript 361.2136ms
+INFO  2023-04-05 21:30:50,029 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=vMuHbqHh635SKL2RG2qsGGCDyHg1yFeGqhPKpS34g4k - - - 200 631 application/javascript 300.5284ms
+INFO  2023-04-05 21:30:50,040 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/sweetalert/sweetalert.min.js?v=KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms - - - 200 40808 application/javascript 438.3854ms
+INFO  2023-04-05 21:30:50,043 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:50,055 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:50,059 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=638163269891554460 - - - 200 11709 application/x-javascript 232.4207ms
+INFO  2023-04-05 21:30:50,063 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=Ta7OYgm62iNXMvVrH3f4y3WqUbGsHGBNvt0Zu0eIKtk - -
+INFO  2023-04-05 21:30:50,070 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/jquery-validate/jquery.validate.unobtrusive.js?v=XNNC8ESw29iopRLukVRazlP44TxnjGmEQanHJ5kHmtk - -
+INFO  2023-04-05 21:30:50,075 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/moment/moment-with-locales.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\moment\moment-with-locales.js'
+INFO  2023-04-05 21:30:50,091 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/jquery/jquery.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\jquery\jquery.js'
+INFO  2023-04-05 21:30:50,128 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2023-04-05 21:30:50,170 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/moment/moment-with-locales.js?v=dgFbqbQVzjkZPQxWd8PBtzGiRBhChc4I2wO_q_s-Xeo - - - 200 541363 application/javascript 533.1349ms
+INFO  2023-04-05 21:30:50,175 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2023-04-05 21:30:50,181 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/jquery-validate/jquery.validate.unobtrusive.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\jquery-validate\jquery.validate.unobtrusive.js'
+INFO  2023-04-05 21:30:50,193 [19   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2023-04-05 21:30:50,197 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=Ta7OYgm62iNXMvVrH3f4y3WqUbGsHGBNvt0Zu0eIKtk - - - 200 2863 application/javascript 364.9477ms
+INFO  2023-04-05 21:30:50,207 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/jquery-validate/jquery.validate.unobtrusive.js?v=XNNC8ESw29iopRLukVRazlP44TxnjGmEQanHJ5kHmtk - - - 200 19366 application/javascript 362.2046ms
+INFO  2023-04-05 21:30:50,214 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 71.2798ms
+INFO  2023-04-05 21:30:50,223 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/jquery/jquery.js?v=WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU - - - 200 280364 application/javascript 686.1827ms
+INFO  2023-04-05 21:30:50,226 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2023-04-05 21:30:50,238 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-04-05 21:30:50,241 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=638163269891554460 - - - 200 15648 application/x-javascript;+charset=utf-8 412.8441ms
+INFO  2023-04-05 21:30:50,249 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Account/Login.js?v=KxhHl3HYb-UQucT7TN2ewhzzgV_WwxRaGwGaSiT8xzM - -
+INFO  2023-04-05 21:30:50,259 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 423.5642ms
+INFO  2023-04-05 21:30:50,265 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=djoKib6ssm5DDzbXLe5pD7ayfFg3siaoEk-BFYzQlvI - -
+INFO  2023-04-05 21:30:50,274 [29   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/admin-lte/dist/js/adminlte.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\admin-lte\dist\js\adminlte.js'
+INFO  2023-04-05 21:30:50,278 [30   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/block-ui/jquery.blockUI.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\block-ui\jquery.blockUI.js'
+INFO  2023-04-05 21:30:50,295 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/font-awesome/css/all.min.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\font-awesome\css\all.min.css'
+INFO  2023-04-05 21:30:50,306 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\view-resources\Views\Account\Login.js'
+INFO  2023-04-05 21:30:50,313 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/js/adminlte.js?v=u48IADL1yBFYTA8PqnxogL0B9HfOVI3frq0ow7V5r_M - - - 200 99945 application/javascript 742.1872ms
+INFO  2023-04-05 21:30:50,321 [26   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2023-04-05 21:30:50,327 [25   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/admin-lte/dist/css/adminlte.min.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\admin-lte\dist\css\adminlte.min.css'
+INFO  2023-04-05 21:30:50,332 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=djoKib6ssm5DDzbXLe5pD7ayfFg3siaoEk-BFYzQlvI - - - 200 2805 application/javascript 484.5643ms
+INFO  2023-04-05 21:30:50,339 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Account/Login.js?v=KxhHl3HYb-UQucT7TN2ewhzzgV_WwxRaGwGaSiT8xzM - - - 200 484 application/javascript 484.9789ms
+INFO  2023-04-05 21:30:50,344 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/block-ui/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc - - - 200 19966 application/javascript 753.2278ms
+INFO  2023-04-05 21:30:50,349 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/font-awesome/css/all.min.css?v=2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y - - - 200 59344 text/css 918.2486ms
+INFO  2023-04-05 21:30:50,357 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/jquery-validate/jquery.validate.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\jquery-validate\jquery.validate.js'
+INFO  2023-04-05 21:30:50,377 [33   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/bootstrap/dist/js/bootstrap.bundle.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\bootstrap\dist\js\bootstrap.bundle.js'
+INFO  2023-04-05 21:30:50,427 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-04-05 21:30:50,438 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/jquery-validate/jquery.validate.js?v=xLhce0FUawd11QSwrvXSwST0oHhOolNoH9cUXAcsIAg - - - 200 50670 application/javascript 647.0098ms
+INFO  2023-04-05 21:30:50,460 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/admin-lte/dist/css/adminlte.min.css?v=FQ-k0mIFfWXVTaW1arh3qKx8IXX5Bm5f6QG-0pkUjaE - - - 200 1382975 text/css 997.3907ms
+INFO  2023-04-05 21:30:50,468 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/bootstrap/dist/js/bootstrap.bundle.js?v=Qesn0fIyfJA0VfGtzm0Kga5Ro9eCzokdNoMPke7bSxE - - - 200 236864 application/javascript 958.8609ms
+INFO  2023-04-05 21:30:50,559 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 188.1981ms
+INFO  2023-04-05 21:30:50,600 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png - -
+INFO  2023-04-05 21:30:50,632 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs-ext\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2023-04-05 21:30:50,643 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs-ext/famfamfam-flags/dist/sprite/famfamfam-flags.png - - - 200 78508 image/png 44.7717ms
+INFO  2023-04-05 21:30:50,859 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/libs/font-awesome/webfonts/fa-solid-900.woff2 - -
+INFO  2023-04-05 21:30:50,879 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/libs/font-awesome/webfonts/fa-solid-900.woff2'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\libs\font-awesome\webfonts\fa-solid-900.woff2'
+INFO  2023-04-05 21:30:50,889 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/libs/font-awesome/webfonts/fa-solid-900.woff2 - - - 200 78196 font/woff2 34.0877ms
+INFO  2023-04-05 21:30:51,849 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/img/favicon.ico - -
+INFO  2023-04-05 21:30:51,875 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/img/favicon.ico'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\img\favicon.ico'
+INFO  2023-04-05 21:30:51,887 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/img/favicon.ico - - - 200 1150 image/x-icon 266.4876ms
+INFO  2023-04-05 21:31:02,872 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Client/Home - -
+INFO  2023-04-05 21:31:02,879 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LinhKienDienTu.Web.Client.Controllers.HomeController.Index (LinhKienDienTu.Web.Mvc)'
+INFO  2023-04-05 21:31:02,890 [3    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "Client", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller LinhKienDienTu.Web.Client.Controllers.HomeController (LinhKienDienTu.Web.Mvc).
+INFO  2023-04-05 21:31:02,900 [3    ] osoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.7 initialized 'LinhKienDienTuDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 5.7.33-mysql 
+INFO  2023-04-05 21:31:02,921 [3    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `AbpAuditLogs` (`BrowserInfo`, `ClientIpAddress`, `ClientName`, `CustomData`, `Exception`, `ExceptionMessage`, `ExecutionDuration`, `ExecutionTime`, `ImpersonatorTenantId`, `ImpersonatorUserId`, `MethodName`, `Parameters`, `ReturnValue`, `ServiceName`, `TenantId`, `UserId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+SELECT `Id`
+FROM `AbpAuditLogs`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+INFO  2023-04-05 21:31:03,415 [8    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2023-04-05 21:31:04,363 [14   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1428.9948ms.
+INFO  2023-04-05 21:31:04,367 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action LinhKienDienTu.Web.Client.Controllers.HomeController.Index (LinhKienDienTu.Web.Mvc) in 1473.2654ms
+INFO  2023-04-05 21:31:04,370 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LinhKienDienTu.Web.Client.Controllers.HomeController.Index (LinhKienDienTu.Web.Mvc)'
+INFO  2023-04-05 21:31:04,397 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Client/Home - - - 200 - text/html;+charset=utf-8 1515.4112ms
+DEBUG 2023-04-05 21:31:04,479 [33   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: MViHTsoLfimult_xoZpnag
+INFO  2023-04-05 21:31:04,500 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/css/bootstrap.min.css - -
+INFO  2023-04-05 21:31:04,510 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/js/owl.carousel.js - -
+INFO  2023-04-05 21:31:04,527 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/js/jquery.js - -
+INFO  2023-04-05 21:31:04,688 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/css/owl.theme.green.css - -
+INFO  2023-04-05 21:31:04,709 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/css/styles.css?v=0.0.1 - -
+INFO  2023-04-05 21:31:04,734 [27   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/js/owl.carousel.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\js\owl.carousel.js'
+INFO  2023-04-05 21:31:04,767 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/css/bootstrap.min.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\css\bootstrap.min.css'
+INFO  2023-04-05 21:31:04,773 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/js/jquery.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\js\jquery.js'
+INFO  2023-04-05 21:31:04,804 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/js/owl.carousel.js - - - 200 93440 application/javascript 266.6466ms
+INFO  2023-04-05 21:31:04,810 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/css/bootstrap.min.css - - - 200 155851 text/css 301.0524ms
+INFO  2023-04-05 21:31:04,824 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/css/owl.theme.green.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\css\owl.theme.green.css'
+INFO  2023-04-05 21:31:04,831 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/css/owl.carousel.css - -
+INFO  2023-04-05 21:31:04,838 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/css/owl.theme.green.css - - - 200 1532 text/css 333.1160ms
+INFO  2023-04-05 21:31:04,842 [29   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/css/styles.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\css\styles.css'
+INFO  2023-04-05 21:31:04,859 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/js/jquery.js - - - 200 304664 application/javascript 315.5191ms
+INFO  2023-04-05 21:31:04,865 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/css/styles.css?v=0.0.1 - - - 200 14500 text/css 351.7517ms
+INFO  2023-04-05 21:31:04,872 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2023-04-05 21:31:04,876 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/css/owl.carousel.css'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\css\owl.carousel.css'
+INFO  2023-04-05 21:31:04,883 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=MViHTsoLfimult_xoZpnag - - - 101 - - 21313.9001ms
+INFO  2023-04-05 21:31:04,896 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/css/owl.carousel.css - - - 200 4930 text/css 393.4723ms
+INFO  2023-04-05 21:31:05,344 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/js/bootstrap.bundle.min.js - -
+INFO  2023-04-05 21:31:05,356 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/js/bootstrap.bundle.min.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\js\bootstrap.bundle.min.js'
+INFO  2023-04-05 21:31:05,369 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/js/bootstrap.bundle.min.js - - - 200 78749 application/javascript 18.3608ms
+INFO  2023-04-05 21:31:05,378 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/js/lib_dtp000.js - -
+INFO  2023-04-05 21:31:05,388 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/js/lib_dtp000.js'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\js\lib_dtp000.js'
+INFO  2023-04-05 21:31:05,395 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/js/lib_dtp000.js - - - 200 1646 application/javascript 14.2890ms
+INFO  2023-04-05 21:31:05,401 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+INFO  2023-04-05 21:31:05,408 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 6.6857ms
+INFO  2023-04-05 21:31:05,420 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/img/logo.png - -
+INFO  2023-04-05 21:31:05,426 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/img/logo.png'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\img\logo.png'
+INFO  2023-04-05 21:31:05,432 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/img/logo.png - - - 200 12600 image/png 10.4113ms
+INFO  2023-04-05 21:31:05,767 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/img/slider_1.jpg - -
+INFO  2023-04-05 21:31:05,773 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/img/slider_1.jpg'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\img\slider_1.jpg'
+INFO  2023-04-05 21:31:05,787 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/img/slider_1.jpg - - - 200 149410 image/jpeg 13.4064ms
+INFO  2023-04-05 21:31:05,793 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/img/slider_2.jpg - -
+INFO  2023-04-05 21:31:05,807 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/img/slider_2.jpg'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\img\slider_2.jpg'
+INFO  2023-04-05 21:31:05,823 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/img/slider_2.jpg - - - 200 170477 image/jpeg 25.9886ms
+INFO  2023-04-05 21:31:05,833 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/img/slider_3.jpg - -
+INFO  2023-04-05 21:31:05,845 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/img/slider_3.jpg'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\img\slider_3.jpg'
+INFO  2023-04-05 21:31:05,856 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/img/slider_3.jpg - - - 200 127064 image/jpeg 22.2749ms
+INFO  2023-04-05 21:31:05,999 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/img/banner_qc.jpg - -
+INFO  2023-04-05 21:31:06,003 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/img/logoft.png - -
+INFO  2023-04-05 21:31:06,035 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/img/logoft.png'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\img\logoft.png'
+INFO  2023-04-05 21:31:06,042 [34   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/img/banner_qc.jpg'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\img\banner_qc.jpg'
+INFO  2023-04-05 21:31:06,050 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/img/logoft.png - - - 200 10068 image/png 42.6991ms
+INFO  2023-04-05 21:31:06,123 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/img/banner_qc.jpg - - - 200 92606 image/jpeg 55.2666ms
+INFO  2023-04-05 21:31:06,639 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+INFO  2023-04-05 21:31:06,817 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 167.8492ms
+INFO  2023-04-05 21:31:08,887 [34   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/assets/img/favicon.png - -
+INFO  2023-04-05 21:31:08,902 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/assets/img/favicon.png'. Physical path: 'D:\ASP.NET\LinhKienDienTu\src\LinhKienDienTu.Web.Mvc\wwwroot\assets\img\favicon.png'
+INFO  2023-04-05 21:31:08,907 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/assets/img/favicon.png - - - 200 840 image/png 46.7372ms
