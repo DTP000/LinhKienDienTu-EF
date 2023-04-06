@@ -1,0 +1,108 @@
+﻿@using LinhKienDienTu.Web.Startup
+@{
+    //ViewBag.CurrentPageName = PageNames.About;
+    //ViewBag.Title = L("About");
+}
+
+<!-- breadcrumb -->
+<div class="bread-crumb">
+	<div class="container">
+		<div class="row">
+			<div class="mt-2" style="-bs-breadcrumb-divider: '&gt;&gt;';"
+				aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">Trang chủ</li>
+					<li class="breadcrumb-item active text-primary" aria-current="page" id="cate-breadcrumb">Danh mục</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end breadcrumb -->
+
+<!-- Chuyên mục sản phẩm -->
+    <div class="search">
+        <div class="container">
+
+            <div class="row">
+                <div class="my-3">
+                <h1 class="fs-4 text-uppercase page-title"></h1>
+                </div>
+            </div>
+            
+            <div class="row mt-4" id="cate-items">
+                    
+               
+               
+            </div>
+ 
+        </div>
+    </div>
+
+    <!-- end chuyên mục sản phẩm -->
+   @section Scripts {
+       <script>
+        const convertToCateItem = (prd) => {
+            const wrapper = document.createElement('div');
+            wrapper.classList.add('col-md-4');
+            wrapper.classList.add('col-sm-6');
+            wrapper.classList.add('col-6');
+            wrapper.innerHTML = [
+                `<div class="row">
+                   <div class="card h-100 product">
+                               <a href="${hostMVC}/Client/Products/Details/${prd.prdId}" class="product-url" title="${prd.prdName}">
+                           <img src="${prd.prdImg}" alt="${prd.prdName}">
+                       </a>
+                       <div class="card-body product-info">
+                           <h3 class="product-name text-truncate ">
+                                       <a class="text-decoration-none text-primary" href="${hostMVC}/Client/Products/Details/${prd.prdId}">${prd.prdName}</a>
+                           </h3>
+                           <div class="product-price">
+                               <span class="text-primary fw-bold">${prd.prdPrice}₫</span>
+                           </div>
+                           <div class="review">
+                               <span class="active"><i class="fa fa-star" aria-hidden="true"></i></span>
+                               <span class="active"><i class="fa fa-star" aria-hidden="true"></i></span>
+                               <span class="active"><i class="fa fa-star" aria-hidden="true"></i></span>
+                               <span class="active"><i class="fa fa-star" aria-hidden="true"></i></span>
+                               <span class="active"><i class="fa fa-star" aria-hidden="true"></i>
+                               <small class="text-secondary">(9 đánh giá)</small></span>
+                           </div>
+                       </div>
+                   </div>
+               </div>`
+            ].join('');
+            document.getElementById('cate-items').appendChild(wrapper);
+
+        }
+
+        const loadDataApiCatePrd = async (id) => {
+            let dataCategories = await getDataAPI(`https://py.test/prdcate.php?category=${id}`);
+            if (dataCategories == null) {
+                alert('Sự cố kết nối đến api');
+                return;
+            }
+            if (dataCategories) {
+                dataCategories.forEach(element => {
+                    convertToCateItem(element)
+                });
+            } else {
+                alert(`Lỗi: ${dataCategories.message}`);
+            }
+        }
+        const loadDataApiCate = async (id) => {
+            let dataCategories = await getDataAPI(`https://py.test/prdcate.php?category=${id}`);
+            if (dataCategories == null) {
+                alert('Sự cố kết nối đến api');
+                return;
+            }
+            if (dataCategories) {
+                document.getElementById('cate-breadcrumb').innerText = dataCategories.data.category ?? 'Danh mục'
+            } else {
+                alert(`Lỗi: ${dataCategories.message}`);
+            }
+        }
+        loadDataApiCate(@Url.ActionContext.RouteData.Values["id"]);
+        loadDataApiCatePrd(@Url.ActionContext.RouteData.Values["id"]);
+       </script>
+   }
