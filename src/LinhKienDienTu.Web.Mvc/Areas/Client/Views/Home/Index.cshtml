@@ -272,7 +272,7 @@
     {
     <script>
 
-
+            
             const newPrdElm = document.getElementById('new-product-item');
     const CSElm = document.getElementById('new-product-item2');
 
@@ -319,9 +319,9 @@
         const wrapper = document.createElement('div');
         wrapper.classList.add('item');
         wrapper.innerHTML = [
-           `<div class="card h-100 product">
+            `<div class="card h-100 product">
 
-           <a href="url"
+               <a href="${hostMVC}/Client/Products/Details/${prd.prdId}"
               title="#"
               class="product-url">
                <img src="${prd.prdImg}"
@@ -330,7 +330,7 @@
            <div class="card-body product-info">
                <h3 class="product-name text-truncate ">
                    <a class="text-decoration-none text-primary"
-                      href="Products/Details/item.Id"
+                          href="${hostMVC}/Client/Products/Details/${prd.prdId}"
                       title="${prd.prdName}">${prd.prdName}</a>
                </h3>
                <div class="product-price">
@@ -368,9 +368,9 @@
         const wrapper = document.createElement('div');
         wrapper.classList.add('item');
         wrapper.innerHTML = [
-           `<div class="card h-100 product">
+            `<div class="card h-100 product">
 
-           <a href="url"
+               <a href="${hostMVC}/Client/Products/Details/${prd.prdId}"
               title="#"
               class="product-url">
                <img src="${prd.prdImg}"
@@ -379,7 +379,7 @@
            <div class="card-body product-info">
                <h3 class="product-name text-truncate ">
                    <a class="text-decoration-none text-primary"
-                      href="Products/Details/item.Id"
+                          href="${hostMVC}/Client/Products/Details/${prd.prdId}"
                       title="${prd.prdName}">${prd.prdName}</a>
                </h3>
                <div class="product-price">
@@ -422,10 +422,10 @@
         wrapper.classList.add('p-4');
         wrapper.classList.add('col-6');
         wrapper.innerHTML = [
-           `<div class="row bg-white">
+            `<div class="row bg-white">
                <div class="col-sm-12">
                    <div class="product-thumnail">
-                       <a class="product-url product-tab" href="Products/Details/item.Id"
+                           <a class="product-url product-tab" href="${hostMVC}/Client/Products/Details/${prd.prdId}"
                            title="${prd.prdName}">
                            <img class="" src="${prd.prdImg}"
                                alt="${prd.prdName}">
@@ -436,7 +436,7 @@
                    <div class="product-info">
                        <h3 class="product-name text-truncate">
                            <a class="text-decoration-none text-primary"
-                               href="Products/Details/item.Id"
+                               href="${hostMVC}/Client/Products/Details/${prd.prdId}"
                                title="${prd.prdName}">${prd.prdName}</a>
                        </h3>
                        <div class="product-price">
@@ -522,5 +522,44 @@
             alert(`Lỗi: ${dataCategories.message}`);
         }
     }
+    // await loadDataApiPrd();
+    // await loadDataApiCS();
+    // await loadDataApiHots(15, convertToItemAudio, 'machtienCSItems')
+    // await loadDataApiHots(16, convertToItemAudio, 'machCSLonItems')
+    // await loadDataApiHots(17, convertToItemAudio, 'machCSgiareItems')
+
+
+    $(document).ready(async function () {
+        await loadDataApiPrd();
+        await loadDataApiCS();
+        await loadDataApiHots(15, convertToItemAudio, 'machtienCSItems')
+        await loadDataApiHots(16, convertToItemAudio, 'machCSLonItems')
+        await loadDataApiHots(17, convertToItemAudio, 'machCSgiareItems')
+
+        $('#cam-ket .owl-carousel').owlCarousel({
+            // loop:true,
+            margin: 0,
+            // nav:true,
+            // items: 2,
+            mouseDrag: true,
+            touchDrag: true,
+            pullDrag: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                400: {
+                    items: 2
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    });
     </script>
 }

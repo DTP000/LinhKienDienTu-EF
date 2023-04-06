@@ -57,7 +57,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Trang chủ</li>
                     <li class="breadcrumb-item" id="catename">Danh mục</li>
-					<li class="breadcrumb-item active text-primary prdname" aria-current="page" id="prdname">Sản phẩm @Url.ActionContext.RouteData.Values["id"]</li>
+					<li class="breadcrumb-item active text-primary prdname" aria-current="page" id="prdname">Sản phẩm</li>
                 </ol>
             </div>
         </div>
@@ -106,7 +106,7 @@
 							</span> <small class="text-secondary">(9 đánh giá)</small>
 						</div>
 						<div class="product-price">
-							@*<span>@Html.DisplayFor(model => model.Price)₫</span>*@
+							<span>0₫</span>
 						</div>
 						<div class="product-detail">
 							@*@Html.DisplayFor(model => model.ShortDesc)*@
@@ -125,8 +125,8 @@
 								</div>
 								<div class="col-auto">
 									<div class="input-submit d-inline-block">
-										@*<input class="hidden" type="hidden" name="productID"
-											value="@Model.Id">*@
+										<input class="hidden" type="hidden" name="productID"
+										   value="@Url.ActionContext.RouteData.Values["id"]">
 										<button class="btn btn-buy bg-primary">
 											<span class="btn-img"> <img class="img-fliud"
 												src="~/assets/img/shopping_cart.png" alt="">
@@ -282,156 +282,219 @@
 @section Scripts
     {
     <script>
- //       $(document).ready(function () {
-	//		var slider = $("#slider");
- //   var thumb = $("#thumb");
- //   var slidesPerPage = 4; //globaly define number of elements per page
- //   var syncedSecondary = true;
- //   slider.owlCarousel({
- //       items: 1,
- //       slideSpeed: 2000,
- //       nav: false,
- //       autoplay: false,
- //       dots: false,
- //       loop: true,
- //       responsiveRefreshRate: 200
- //   }).on('changed.owl.carousel', syncPosition);
- //   thumb
- //       .on(
- //           'initialized.owl.carousel',
- //           function() {
- //               thumb.find(".owl-item").eq(0)
- //                   .addClass("current");
- //           })
- //       .owlCarousel({
- //           items: slidesPerPage,
- //           dots: false,
- //           nav: true,
- //           item: 4,
- //           smartSpeed: 200,
- //           slideSpeed: 500,
- //           slideBy: slidesPerPage,
- //           navText: [
- //               '<svg width="18px" height="18px" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>',
- //               '<svg width="25px" height="25px" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'
- //           ],
- //           responsiveRefreshRate: 100
- //       }).on('changed.owl.carousel',
- //           syncPosition2);
+		const convertToPrdImgSlider = (img) => {
+			const wrapper = document.createElement('div');
+			// wrapper.classList.add('col-md-4');
+			// wrapper.classList.add('col-sm-6');
+			wrapper.classList.add('item');
+			wrapper.innerHTML = [
+				`<a href="${img.url}">
+			   <img class="img-fluid" src="${img.url}"
+			   alt="">
+		   </a>`
+			].join('');
+			document.getElementById('slider').appendChild(wrapper);
 
- //   function syncPosition(el) {
- //       var count = el.item.count - 1;
- //       var current = Math.round(el.item.index -
- //           (el.item.count / 2) - .5);
- //       if (current < 0) {
- //           current = count;
- //       }
- //       if (current > count) {
- //           current = 0;
- //       }
- //       thumb.find(".owl-item").removeClass("current")
- //           .eq(current).addClass("current");
- //       var onscreen = thumb.find('.owl-item.active').length - 1;
- //       var start = thumb.find('.owl-item.active')
- //           .first().index();
- //       var end = thumb.find('.owl-item.active').last()
- //           .index();
- //       if (current > end) {
- //           thumb.data('owl.carousel').to(current, 100,
- //               true);
- //       }
- //       if (current < start) {
- //           thumb.data('owl.carousel').to(
- //               current - onscreen, 100, true);
- //       }
- //   }
+		}
 
- //   function syncPosition2(el) {
- //       if (syncedSecondary) {
- //           var number = el.item.index;
- //           slider.data('owl.carousel').to(number, 100,
- //               true);
- //       }
- //   }
- //   thumb.on("click", ".owl-item", function(e) {
- //       e.preventDefault();
- //       var number = $(this).index();
- //       slider.data('owl.carousel').to(number, 300,
- //           true);
- //   });
+		const convertToPrdImgThumb = (img) => {
+			const wrapper = document.createElement('div');
+			// wrapper.classList.add('col-md-4');
+			// wrapper.classList.add('col-sm-6');
+			wrapper.classList.add('item');
+			wrapper.innerHTML = [
+				`<a href="#">
+			   <img class="img-fluid" src="${img.url}"
+				alt="">
+		   </a>`
+			].join('');
+			document.getElementById('thumb').appendChild(wrapper);
 
- //   $(".qtyminus").on("click", function() {
-	//			var now = $("#qtym").val();
- //       if ($.isNumeric(now)) {
- //           if (parseInt(now) - 1 > 0) {
- //               now--;
- //           }
-	//				$("#qtym").val(now);
- //       }
- //   })
- //   $(".qtyplus").on("click", function() {
- //       var now = $("#qtym").val();
- //       if ($.isNumeric(now)) {
- //           $("#qtym").val(parseInt(now) + 1);
- //       }
- //   });
-	//$("button.btn-buy").on("click", function() {
- //       addToCard();
- //   });
- //       $('#new-product .owl-carousel').owlCarousel({
- //           // loop:true,
- //           margin: 0,
- //           nav: true,
- //           // items: 2,
- //           mouseDrag: true,
- //           touchDrag: true,
- //           pullDrag: true,
- //           dots: false,
- //           responsive: {
- //               0: {
- //                   items: 1
- //               },
- //               400: {
- //                   items: 2
- //               },
- //               600: {
- //                   items: 3
- //               },
- //               1000: {
- //                   items: 4
- //               }
- //           }
- //       });
-            
- //   });
-	//function addToCard(){
-	//	dataCard = JSON.parse(localStorage.getItem('dataCard'));
-	//	let quantityPrd = document.getElementById('qtym').value;
-	//	let idPrd = document.querySelector('input[name=productID]').value;
-	//	let objPrd = {
-	//			idPrd: parseInt(idPrd),
-	//			quantityPrd: parseInt(quantityPrd),
-	//			issetPrd: false
-	//		};
-	//	if (!dataCard) dataCard = [];
-	//	dataCard.some(item => {
-	//		if (item.idPrd == objPrd.idPrd){
-	//			item.quantityPrd += objPrd.quantityPrd;
-	//				objPrd.issetPrd = true;
-	//		}
-	//	}, objPrd);
-	//	if(!objPrd.issetPrd){
-	//		dataCard.push({
-	//			idPrd: idPrd,
-	//			quantityPrd: quantityPrd,
-	//		});
-	//	}
-	//	localStorage.setItem('dataCard', JSON.stringify(dataCard));
-	//	let qtyCard = dataCard.length;
-	//	let nodeQtycard = document.querySelectorAll('span.qty-card');
-	//	nodeQtycard.forEach(item => {
-	//		item.innerText = qtyCard;
-	//	}, qtyCard);
-	//}
+		}
+
+		const loadDataApiPrdImg = async (id) => {
+			let dataCategories = await getDataAPI(`https://py.test/prd.php?product=${id}`);
+			if (dataCategories == null) {
+				alert('Sự cố kết nối đến api');
+				return;
+			}
+			if (dataCategories) {
+				showInfoPrd(dataCategories.data.product)
+				dataCategories.data.product_images.forEach(element => {
+					// convertToCateItem(element)
+					convertToPrdImgThumb(element);
+					convertToPrdImgSlider(element)
+				});
+			} else {
+				alert(`Lỗi: ${dataCategories.message}`);
+			}
+		}
+
+		const showInfoPrd = (prd) => {
+			console.log(prd)
+
+			let prdNameElm = document.querySelectorAll('.prdname');
+			prdNameElm.forEach(e => {
+				e.innerText = prd.name
+			})
+
+			document.querySelector('.product-price span').innerText = prd.price;
+			document.querySelector('.product-detail').innerText = prd.short_desc
+			document.querySelector('.rte').innerText = prd.long_desc
+
+		}
+		$(document).ready(async function () {
+			await loadDataApiPrdImg(@Url.ActionContext.RouteData.Values["id"]);
+			var slider = $("#slider");
+			var thumb = $("#thumb");
+			var slidesPerPage = 4; //globaly define number of elements per page
+			var syncedSecondary = true;
+			slider.owlCarousel({
+				items: 1,
+				slideSpeed: 2000,
+				nav: false,
+				autoplay: false,
+				dots: false,
+				loop: true,
+				responsiveRefreshRate: 200
+			}).on('changed.owl.carousel', syncPosition);
+			thumb
+				.on(
+					'initialized.owl.carousel',
+					function () {
+						thumb.find(".owl-item").eq(0)
+							.addClass("current");
+					})
+				.owlCarousel({
+					items: slidesPerPage,
+					dots: false,
+					nav: true,
+					item: 4,
+					smartSpeed: 200,
+					slideSpeed: 500,
+					slideBy: slidesPerPage,
+					navText: [
+						'<svg width="18px" height="18px" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>',
+						'<svg width="25px" height="25px" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'
+					],
+					responsiveRefreshRate: 100
+				}).on('changed.owl.carousel',
+					syncPosition2);
+
+			function syncPosition(el) {
+				var count = el.item.count - 1;
+				var current = Math.round(el.item.index -
+					(el.item.count / 2) - .5);
+				if (current < 0) {
+					current = count;
+				}
+				if (current > count) {
+					current = 0;
+				}
+				thumb.find(".owl-item").removeClass("current")
+					.eq(current).addClass("current");
+				var onscreen = thumb.find('.owl-item.active').length - 1;
+				var start = thumb.find('.owl-item.active')
+					.first().index();
+				var end = thumb.find('.owl-item.active').last()
+					.index();
+				if (current > end) {
+					thumb.data('owl.carousel').to(current, 100,
+						true);
+				}
+				if (current < start) {
+					thumb.data('owl.carousel').to(
+						current - onscreen, 100, true);
+				}
+			}
+
+			function syncPosition2(el) {
+				if (syncedSecondary) {
+					var number = el.item.index;
+					slider.data('owl.carousel').to(number, 100,
+						true);
+				}
+			}
+			thumb.on("click", ".owl-item", function (e) {
+				e.preventDefault();
+				var number = $(this).index();
+				slider.data('owl.carousel').to(number, 300,
+					true);
+			});
+
+			$(".qtyminus").on("click", function () {
+				var now = $("#qtym").val();
+				if ($.isNumeric(now)) {
+					if (parseInt(now) - 1 > 0) {
+						now--;
+					}
+					$("#qtym").val(now);
+				}
+			})
+			$(".qtyplus").on("click", function () {
+				var now = $("#qtym").val();
+				if ($.isNumeric(now)) {
+					$("#qtym").val(parseInt(now) + 1);
+				}
+			});
+			$("button.btn-buy").on("click", function () {
+				addToCard();
+			});
+			$('#new-product .owl-carousel').owlCarousel({
+				// loop:true,
+				margin: 0,
+				nav: true,
+				// items: 2,
+				mouseDrag: true,
+				touchDrag: true,
+				pullDrag: true,
+				dots: false,
+				responsive: {
+					0: {
+						items: 1
+					},
+					400: {
+						items: 2
+					},
+					600: {
+						items: 3
+					},
+					1000: {
+						items: 4
+					}
+				}
+			});
+
+		});
+		function addToCard() {
+			dataCard = JSON.parse(localStorage.getItem('dataCard'));
+			let quantityPrd = document.getElementById('qtym').value;
+			let idPrd = document.querySelector('input[name=productID]').value;
+			let objPrd = {
+				idPrd: parseInt(idPrd),
+				quantityPrd: parseInt(quantityPrd),
+				issetPrd: false
+			};
+			if (!dataCard) dataCard = [];
+			dataCard.some(item => {
+				if (item.idPrd == objPrd.idPrd) {
+					
+					item.quantityPrd += parseInt(objPrd.quantityPrd);
+					objPrd.issetPrd = true;
+				}
+			}, objPrd);
+			if (!objPrd.issetPrd) {
+				dataCard.push({
+					idPrd: idPrd,
+					quantityPrd: quantityPrd,
+				});
+			}
+			localStorage.setItem('dataCard', JSON.stringify(dataCard));
+			let qtyCard = dataCard.length;
+			let nodeQtycard = document.querySelectorAll('span.qty-card');
+			nodeQtycard.forEach(item => {
+				item.innerText = qtyCard;
+			}, qtyCard);
+		}
     </script>
 }

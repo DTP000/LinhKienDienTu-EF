@@ -5,9 +5,9 @@ using LinhKienDienTu.Controllers;
 namespace LinhKienDienTu.Web.Client.Controllers
 {
     [Area("Client")]
-    public class CategoriesController : LinhKienDienTuControllerBase
+    public class OrderController : LinhKienDienTuControllerBase
     {
-        public ActionResult Index()
+        public ActionResult Cart()
         {
             return View();
         }

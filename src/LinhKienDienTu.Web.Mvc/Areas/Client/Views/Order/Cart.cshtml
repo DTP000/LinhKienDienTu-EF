@@ -76,9 +76,9 @@
                                 <a class="btn btn-secondary text-uppercase fs-6" href="./home">
                                     Tiếp tục mua hàng
                                 </a>
-                                <a class="btn btn-primary text-uppercase fs-6" href="./checkOut">
-                                    Thực hiện thanh toán
-                                </a>
+                            <a class="btn btn-primary text-uppercase fs-6" href="#" data-bs-toggle="modal" data-bs-target="#checkout">
+                                Thực hiện thanh toán
+                            </a>
                             </div>
                         </div>
                     </div>
@@ -87,21 +87,106 @@
         </div>
 
     </div>
+<div class="modal fade" id="checkout" tabindex="-1" aria-labelledby="checkout" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header alert alert-primary">
+                <h5 class="modal-title" id="register">Đăng kí</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+@*                <form action="checkout" method="post">
+*@                    <div class="mb-3">
+                        <label for="name" class="form-label">Tên người nhận: (*)</label>
+                        <input class="form-control" type="text" id="full-name" name="name" aria-describedby="userNameHelp"
+                               required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Số điện thoại: (*)</label>
+                        <input class="form-control" id="phone" type="text" name="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Địa chỉ: (*)</label>
+                        <textarea name="address" id="address" class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="note" class="form-label">Ghi chú</label>
+                        <textarea name="note" id="note" class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary" id="btn-checkout">Thanh toán</button>
+                    </div>
+@*                </form>
+*@            </div>
 
+        </div>
+    </div>
+</div>
 
 @section Scripts {
     <script>
+        const initDataCheckout = async () => {
+
+            let name = document.getElementById('full-name').value;
+            let phone = document.getElementById('phone').value;
+            let address = document.getElementById('address').value;
+            let note = document.getElementById('note').value;
+            let total_price = document.getElementById('thanh-tien-hihi').innerText.replaceAll('₫', '');
+
+
+            // lấy thông tin sản phẩm
+            let elmTr = document.querySelectorAll('input.inp-quan');
+            items = [];
+            elmTr.forEach(element => {
+                let idPrd = parseInt(element.getAttribute('data-id-product'));
+                let price = parseInt(element.getAttribute('data-price-product'));
+                let quantityPrd = parseInt(element.value);
+                items.push({
+                    product_id: parseInt(idPrd),
+                    price: parseInt(price),
+                    quantity: parseInt(quantityPrd),
+                });
+            }, items);
+
+            let dataCheckout = {
+                name: name,
+                phone: phone,
+                address: address,
+                total_price: total_price,
+                note: note,
+                items: items
+            }
+
+            console.log(dataCheckout)
+            let dt = await postData('http://localhost:8000/api/checkout', dataCheckout)
+            if (dt == null) {
+                alert('Có sự cố khi kết nối đến máy chủ rồi, bạn thử lại sau nhé');
+                return;
+            }
+            if (dt.err_code == 0) {
+                //xoá giỏ hàng hiện tại
+                // localStorage.setItem('dataCard', JSON.stringify([]));
+
+                // điều hướng
+                window.location.href = 'http://localhost:8000'
+
+            } else if (dt.err_code == 403) {
+                window.location.href = 'http://localhost:8000/account/login/'
+            } else {
+                alert(`Lỗi: ${dt.err_msg}`);
+            }
+        }
 
         var elementTableCard = document.querySelector('#gio-hang tbody');
 
         const loadDataApiPrd = async (id, quantity) => {
-            let dataCategories = await getDataAPI(`https://localhost:7299/api/products/${id}`);
+            let dataCategories = await getDataAPI(`https://py.test/prd.php?product=${id}`);
             if (dataCategories == null) {
                 alert('Sự cố kết nối đến api');
                 return;
             }
             if (dataCategories.success) {
-                convertToTr(dataCategories.data, quantity);
+                convertToTr(dataCategories.data.product, quantity);
             } else {
                 alert(`Lỗi: ${dataCategories.message}`);
             }
@@ -158,7 +243,7 @@
             </tr>`
             ].join('');
             elementTableCard.appendChild(wrapper);
-
+            calcTotalPrice();
         }
 
         const loadCard = async () => {
@@ -235,7 +320,7 @@
 
 
         $(document).ready(function () {
-            //loadCard();
+            loadCard();
         });
     </script>
 }

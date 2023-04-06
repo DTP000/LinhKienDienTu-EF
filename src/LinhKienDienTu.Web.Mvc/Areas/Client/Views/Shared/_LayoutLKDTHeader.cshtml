@@ -2,25 +2,25 @@
 <div class="container py-4 header-lg">
     <div class="row">
         <div class="col-md-3">
-            <a asp-area="" asp-area="Client" asp-controller="Home" asp-action="Index">
+            <a href="https://localhost:44312/Client/">
                 <img class="img-fluid" src="~/assets/img/logo.png" alt="Logo - Linh Kiện Điện Tử">
             </a>
         </div>
         <div class="col-md-6 mt-4">
             <div class="search">
-@*                <form asp-controller="Search" asp-action="Index" method="GET">
-*@                    <div class="input-group border border-primary border-2">
+                <form asp-area="Client" asp-controller="Search" asp-action="Index" method="GET">
+                 <div class="input-group border border-primary border-2">
                         <input name="q" type="text" value="" class="form-control border-0" placeholder="Bạn đang tìm sản phẩm gì...?">
                         <button type="submit" class="input-group-text border-primary br-0 bg-primary text-white btn-search" id="basic-addon1">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
                     </div>
-                @*</form>*@
+                </form>
             </div>
         </div>
         <div class="col-md-3 mt-4">
             <div class="text-end icon-card">
-                <a class="text-primary text-decoration-none" asp-area="Client" asp-controller="Card" asp-action="Index">
+                <a class="text-primary text-decoration-none" href="https://localhost:44312/Client/Order/Cart/">
                     <i class="fa fa-shopping-cart pe-2" aria-hidden="true"></i>
                     <span class="align-top badge bg-primary qty-card">0</span>
                     <span class="d-block text-secondary text-end">Giỏ hàng</span>
@@ -55,30 +55,30 @@
                     <div class="offcanvas-contents mt-2 bg-primary">
                         <ul class="list-group">
                             <li class="border-bottom border-1 border-white">
-                                <a class="url text-decoration-none text-white" asp-area="Client" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                                <a class="url text-decoration-none text-white" href="https://localhost:44312/Client/">Trang chủ</a>
                                 <!-- <i class="fa fa-plus" role="button" id="btdm" data-bs-toggle="dropdown" aria-expanded="false" aria-hidden="true"></i> -->
 
                             </li>
                             <li class="border-bottom border-1 border-white">
-                                <a class="url text-decoration-none text-white" href="./tat-ca-san-pham">Tất cả sản phẩm</a>
+                                <a class="url text-decoration-none text-white" href="https://localhost:44312/Client/">Tất cả sản phẩm</a>
 
                                 <i class="fa fa-plus" data-bs-toggle="collapse" href="#tatcasp" role="button" aria-expanded="false" aria-controls="tatcasp" aria-hidden="true"></i>
                                 <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
                                 <ul id="tatcasp" class="collapse list-group border-top border-white">
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./san-pham-khuyen-mai" class="url ls-item text-white">Sản phẩm khuyến mãi</a>
+                                        <a href="https://localhost:44312/Client/Categories/1" class="url ls-item text-white">Sản phẩm khuyến mãi</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./san-pham-noi-bat" class="url ls-item text-white">Sản phẩm nổi bật</a>
+                                        <a href="https://localhost:44312/Client/Categories/2" class="url ls-item text-white">Sản phẩm nổi bật</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./san-pham-moi" class="url ls-item text-white">Sản phẩm mới</a>
+                                        <a href="https://localhost:44312/Client/Categories/2" class="url ls-item text-white">Sản phẩm mới</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./do-cu-thanh-ly" class="url ls-item text-white">Đồ cũ, thanh lý</a>
+                                        <a href="https://localhost:44312/Client/Categories/2" class="url ls-item text-white">Đồ cũ, thanh lý</a>
                                     </li>
                                     <li class="">
-                                        <a href="./ban-buon" class="url ls-item text-white">Bán buôn</a>
+                                        <a href="https://localhost:44312/Client/Categories/11" class="url ls-item text-white">Bán buôn</a>
                                     </li>
                                 </ul>
                             </li>
@@ -88,25 +88,25 @@
                                 <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
                                 <ul id="linhkien" class="collapse list-group border-top border-white">
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./dien-tro" class="url ls-item text-white">Điện trở</a>
+                                        <a href="https://localhost:44312/Client/Categories/3" class="url ls-item text-white">Điện trở</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./ic-cac-loai" class="url ls-item text-white">IC các loại</a>
+                                        <a href="https://localhost:44312/Client/Categories/4" class="url ls-item text-white">IC các loại</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./tu-dien" class="url ls-item text-white">Tụ điện</a>
+                                        <a href="https://localhost:44312/Client/Categories/5" class="url ls-item text-white">Tụ điện</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./diode" class="url ls-item text-white">Diode (Đi ốt)</a>
+                                        <a href="https://localhost:44312/Client/Categories/6" class="url ls-item text-white">Diode (Đi ốt)</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./transistor" class="url ls-item text-white">Transistor BJT</a>
+                                        <a href="https://localhost:44312/Client/Categories/7" class="url ls-item text-white">Transistor BJT</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./thiet-bi-do" class="url ls-item text-white">Thiết bị đo</a>
+                                        <a href="https://localhost:44312/Client/Categories/8" class="url ls-item text-white">Thiết bị đo</a>
                                     </li>
                                     <li class="">
-                                        <a href="./bien-ap-nguon-xung" class="url ls-item text-white">Biến áp, nguồn xung</a>
+                                        <a href="https://localhost:44312/Client/Categories/11" class="url ls-item text-white">Biến áp, nguồn xung</a>
                                     </li>
                                 </ul>
 
@@ -117,16 +117,16 @@
                                 <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
                                 <ul id="machdientu" class="collapse list-group border-top border-white">
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./mach-cong-suat-am-ly" class="url ls-item text-white">Mạch công suất Amply</a>
+                                        <a href="https://localhost:44312/Client/Categories/12" class="url ls-item text-white">Mạch công suất Amply</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./mach-dien-diy" class="url ls-item text-white">Mạch điện DIY</a>
+                                        <a href="https://localhost:44312/Client/Categories/13" class="url ls-item text-white">Mạch điện DIY</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./mach-inverter-kich-dien" class="url ls-item text-white">Mạch Inverter (Kích điện)</a>
+                                        <a href="https://localhost:44312/Client/Categories/14" class="url ls-item text-white">Mạch Inverter (Kích điện)</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./ky-thuat-dien-tu" class="url ls-item text-white">Kỹ thuật điện tử</a>
+                                        <a href="https://localhost:44312/Client/Categories/15" class="url ls-item text-white">Kỹ thuật điện tử</a>
                                     </li>
                                 </ul>
                             </li>
@@ -142,7 +142,7 @@
                                         <a href="./tin-tuc" class="url ls-item text-white">Tin tức</a>
                                     </li>
                                     <li class="border-bottom border-1 border-white">
-                                        <a href="./ky-thuat-dien-tu" class="url ls-item text-white">Kỹ thuật điện tử</a>
+                                        <a href="https://localhost:44312/Client/Categories/15" class="url ls-item text-white">Kỹ thuật điện tử</a>
                                     </li>
                                 </ul>
                             </li>
@@ -152,13 +152,13 @@
             </div>
         </div>
         <div class="col-6 text-center">
-            <a asp-area="" asp-controller="Home" asp-action="Index">
+            <a href="https://localhost:44312/Client">
                 <img class="img-fluid logo" src="~/assets/img/logo.png" alt="">
             </a>
         </div>
         <div class="col-3">
             <div class="text-end icon-card">
-                <a class="text-primary text-decoration-none" href="./card">
+                <a class="text-primary text-decoration-none" href="https://localhost:44312/Client/Order/Cart/">
                     <i class="fa fa-shopping-cart pe-2" aria-hidden="true"></i>
                     <span class="align-top badge bg-primary qty-card">0</span>
                     <span class="d-block text-secondary text-end">Giỏ hàng</span>
@@ -197,8 +197,8 @@
                             <i class="ps-5 fa fa-bars text-end" aria-hidden="true"></i>
                         </a>
                         <ul class="danhmucul dropdown-menu me-4 border border-primary br-0" aria-labelledby="btdm">
-                            <li class="border-bottom py-1"><a class="dropdown-item" href="./mach-dien-tu">Mạch điện tử</a></li>
-                            <li class="border-bottom py-1"><a class="dropdown-item" href="./linh-kien">Linh kiện</a></li>
+                            <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/15">Mạch điện tử</a></li>
+                            <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/5">Linh kiện</a></li>
                             <li class="py-1"><a class="dropdown-item" href="./xem-them">Xem thêm</a></li>
                         </ul>
                     </div>
@@ -210,18 +210,18 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item px-2">
-                                <a class="nav-link url" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                                <a class="nav-link url" href="https://localhost:44312/Client/">Trang chủ</a>
                             </li>
                             <li class="nav-item abcds px-2 dropdown">
                                 <a class="nav-link url dropdown-toggle" href="#" id="dropa" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Tất cả sản phẩm
                                 </a>
                                 <ul class="dropdown-menu border border-primary br-0 mt-2" aria-labelledby="dropa">
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./san-pham-khuyen-mai">Sản phẩm khuyến mãi</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./san-pham-noi-bat">Sản phẩm nổi bật</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./san-pham-moi">Sản phẩm mới</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./do-cu-thanh-ly">Đồ cũ, thanh lý</a></li>
-                                    <li class=" py-1"><a class="dropdown-item" href="./ban-buon">Bán buôn</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/1">Sản phẩm khuyến mãi</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/1">Sản phẩm nổi bật</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/2">Sản phẩm mới</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/2">Đồ cũ, thanh lý</a></li>
+                                    <li class=" py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/11">Bán buôn</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item px-2 dropdown">
@@ -229,16 +229,14 @@
                                     Linh kiện
                                 </a>
                                 <ul class="dropdown-menu border border-primary br-0 mt-2" aria-labelledby="dropb">
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./dien-tro">Điện trở</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./ic-cac-loai">IC Các Loại</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./tu-dien">Tụ điện</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./dong-co">Động cơ</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./diode">Diode (Đi ốt)</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./transistor">Transistor BJT</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./day-jack-bus">Dây Jack - Bus</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./tan-nhiet">Tản nhiệt</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./thiet-bi-do">Thiết bị đo</a></li>
-                                    <li class=" py-1"><a class="dropdown-item" href="./bien-ap-nguon-xung">Biến áp - Nguồn xung</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/3">Điện trở</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/4">IC Các Loại</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/5">Tụ điện</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/6">Diode (Đi ốt)</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/7">Transistor BJT</a></li>
+  
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/10">Thiết bị đo</a></li>
+                                    <li class=" py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/11">Biến áp - Nguồn xung</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item px-2 dropdown">
@@ -246,10 +244,9 @@
                                     Mạch điện tử
                                 </a>
                                 <ul class="dropdown-menu border border-primary br-0 mt-2" aria-labelledby="dropc">
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./mach-cong-suat-amply">Mạch công suất Amply</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./mach-dien-diy">Mạch điện DIY</a></li>
-                                    <li class="border-bottom py-1"><a class="dropdown-item" href="./mach-inverter-kich-dien">Mạch Inverter (Kích điện)</a></li>
-                                    <li class="py-1"><a class="dropdown-item" href="./ky-thuat-dien-tu">Kỹ thuật điện tử</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/12">Mạch công suất Amply</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/13">Mạch điện DIY</a></li>
+                                    <li class="border-bottom py-1"><a class="dropdown-item" href="https://localhost:44312/Client/Categories/Details/14">Mạch Inverter (Kích điện)</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item px-1">
