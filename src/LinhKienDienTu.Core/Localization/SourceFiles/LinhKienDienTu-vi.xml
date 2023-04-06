@@ -116,5 +116,32 @@
 	  <text name="Clear">Làm mới</text>
 	  <text name="ResetPasswordStepOneInfo">1. Nhập mật khẩu quản trị viên của bạn</text>
 	  <text name="ResetPasswordStepTwoInfo">2. Sao chép mật khẩu ngẫu nhiên này để bạn có thể gửi cho người dùng</text>
+	  
+	  <text name="Category">Danh mục</text>
+	  <text name="CreateCategory">Thêm danh mục</text>
+	  <text name="CreateNewCategory">Thêm danh mục</text>
+	  <text name="EditCategory">Sửa danh mục</text>
+	  <text name="CategoryName">Tên danh mục</text>
+	  <text name="Product">Sản phẩm</text>
+	  <text name="ProductName">Tên sản phẩm</text>
+	  <text name="EditProduct">Sửa sản phẩm</text>
+	  <text name="CreateProduct">Thêm sản phẩm</text>
+	  <text name="ProductPrice">Giá</text>
+	  <text name="ProductQuantity">Số lượng</text>
+	  <text name="ProductUrlImage">Ảnh</text>
+	  <text name="ProductDescr">Mô tả</text>
+	  <text name="CreateNewProduct">Thêm sản phẩm</text>
+	  <text name="Order">Đơn hàng</text>
+	  <text name="View">Xem</text>
+	  <text name="Order.Name">Tên người nhận</text>
+	  <text name="Order.Phone">Số điện thoại</text>
+	  <text name="Order.Address">Địa chỉ</text>
+	  <text name="Order.TotalPrice">Tổng tiền</text>
+	  <text name="Order.Note">Ghi chú</text>
+	  <text name="OrderDetail.Product">Tên sản phẩm</text>
+	  <text name="OrderDetail.Quantity">Số lượng</text>
+	  <text name="OrderDetail.Price">Đơn giá</text>
+	  <text name="OrderDetail.Note">Ghi chú</text>
+  
   </texts>
 </localizationDictionary>

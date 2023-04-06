@@ -1,0 +1,92 @@
+﻿@using LinhKienDienTu.Web.Startup
+@model LinhKienDienTu.Web.Models.Orders.OrderListViewModel
+@{
+    ViewBag.Title = L("Order");
+    ViewBag.CurrentPageName = PageNames.Order;
+}
+@section scripts
+    {
+    <environment names="Development">
+        <script src="~/view-resources/Views/Order/Index.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/Order/_CreateOrderDetailModal.js" asp-append-version="true"></script>
+    </environment>
+
+    @*<environment names="Staging,Production">
+        <script src="~/view-resources/Views/DuAn/Index.min.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/DuAn/_CreateDuAnModuleModal.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/DuAn/_CreateThanhVienThamGiaModal.js" asp-append-version="true"></script>
+    </environment>*@
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                    <h1>@L("Order")</h1>
+            </div>
+            <div class="col-sm-6">
+                        <a href="javascript:;" data-toggle="modal" data-target="#OrderCreateModal" class="btn bg-blue float-sm-right">
+                    <i class="fa fa-plus-square"></i>
+                        @L("Create") @L("Order")
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <!--Use for bulk actions-->
+                            </div>
+                            <div class="col-md-2">
+                                @await Html.PartialAsync("~/Views/Order/Index.AdvancedSearch.cshtml")
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="OrdersTable" class="table table-striped projects">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>@L("Order.Name")</th>
+                                        <th>@L("Order.Phone")</th>
+                                        <th>@L("Order.TotalPrice")</th>
+                                        <th>@L("Order.OrderStatus")</th>
+                                        <th>@L("Order.Address")</th>
+                                        <th style="width: 150px">@L("Actions")</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    @await Html.PartialAsync("~/Views/Order/_CreateModal.cshtml", Model)
+
+        <div class="modal fade" id="OrderEditModal" tabindex="-1" role="dialog" aria-labelledby="OrderEditModalLabel" data-backdrop="static">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+        <div class="modal fade" id="OrderViewModal" tabindex="-1" role="dialog" aria-labelledby="OrderViewModalLabel" data-backdrop="static">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+
+    @await Html.PartialAsync("~/Views/Order/_AddOrderDetailModal.cshtml")
+    
+    @await Html.PartialAsync("~/Views/Order/_EditOrderDetailModal.cshtml")
+    

@@ -33,6 +33,11 @@
             return convertToCamelCasedObject(obj);
         }
 
+        //những input có format là tiền thì phải convert lại thành số
+        this.find('.input-amount').toArray().forEach(function (field) {
+            obj[field.name] = field.value.replaceAll(".", "")
+        });
+
         return obj;
     };
 
@@ -130,4 +135,49 @@
         });
         $this[0].reset();
     };
+
+    $.fn.disableForm = function () {
+        var $this = $(this)
+        $('[name]', $this).each((i, obj) => {
+            $(obj).prop("disabled", true);
+        });
+    };
+
+    numberFormat = function numberFormat(value) {
+        return new Intl.NumberFormat('vi-VN').format(value);
+    }
+
+    numberFormatCurrency = function numberFormatCurrency() {
+        return $.fn.dataTable.render.number('.', ',', 0)
+    }
+
+    $.fn.fillToForm = function (rowData) {
+        var $this = $(this)
+
+        let objKeys = Object.keys(rowData);
+        objKeys.forEach(key => {
+            let value = rowData[key];
+            let keyUpper = key.charAt(0).toUpperCase() + key.slice(1);
+            $this.find("#" + keyUpper).val(value);
+        });
+    };
+
+    $.fn.registerInputAmount = function () {
+        var $this = $(this)
+        $this.find('.input-amount').toArray().forEach(function (field) {
+            new Cleave(field, {
+                numeral: true,
+                numericOnly: true,
+                numeralPositiveOnly: true, //so duong
+                numeralDecimalMark: ',',
+                delimiter: '.',
+                numeralThousandsGroupStyle: 'thousand',
+            });
+            field.value = field.value;
+        });
+    };
+
+    removeDotInAmount = function removeDotInAmount(value) {
+        return value.replaceAll(".", "");
+    }
 })(jQuery);

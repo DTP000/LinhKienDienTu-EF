@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 using Abp.UI;
 using System;
 using Abp.Application.Services.Dto;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using LinhKienDienTu.Common;
 
 namespace LinhKienDienTu.Products
 {
@@ -61,6 +64,27 @@ namespace LinhKienDienTu.Products
             return Repository.GetAll()
                 .WhereIf(!input.Keyword.IsNullOrWhiteSpace(),
                 x => x.Name.Contains(input.Keyword) && x.IsDeleted == Common.IsDeleted.CHUA_XOA);
+        }
+
+        public async Task<List<SelectListItem>> GetSelectListProductAsync()
+        {
+            try
+            {
+                var result = Repository.GetAll()
+                  .Where(x => x.IsDeleted == IsDeleted.CHUA_XOA)
+                  .Select(x => new SelectListItem()
+                  {
+                      Value = x.Id.ToString(),
+                      Text = x.Name,
+                  })
+                  .ToList();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new UserFriendlyException("Lấy sản phẩm lỗi");
+            }
         }
     }
 }
