@@ -2,7 +2,7 @@
 @model LinhKienDienTu.Web.Models.Products.ProductListViewModel
 @{
     ViewBag.Title = L("Product");
-    ViewBag.CurrentPageName = PageNames.Roles;
+    ViewBag.CurrentPageName = PageNames.Products;
 }
 @section scripts
 {
@@ -50,7 +50,10 @@
                                 <thead>
                                     <tr>
                                         <th></th>
-                                         <th>@L("ProductName")</th>
+                                        <th>@L("ProductName")</th>
+                                        <th>@L("ProductPrice")</th>
+                                        <th>@L("ProductQuantity")</th>
+                                        <th>@L("ProductUrlImage")</th>
                                         <th style="width: 150px">@L("Actions")</th>
                                     </tr>
                                 </thead>
@@ -68,6 +71,13 @@
     @await Html.PartialAsync("~/Views/Product/_CreateModal.cshtml", Model)
 
 <div class="modal fade" id="ProductEditModal" tabindex="-1" role="dialog" aria-labelledby="ProductEditModalLabel" data-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ProductViewModal" tabindex="-1" role="dialog" aria-labelledby="ProductViewModalLabel" data-backdrop="static">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
         </div>

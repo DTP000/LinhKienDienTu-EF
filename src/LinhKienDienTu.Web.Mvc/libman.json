@@ -184,6 +184,14 @@
     {
       "library": "push.js@1.0.12",
       "destination": "wwwroot/libs/push.js"
+    },
+    {
+      "library": "cleave.js@1.6.0",
+      "destination": "wwwroot/libs/cleave-js/",
+      "files": [
+        "cleave.js",
+        "cleave.min.js"
+      ]
     }
     //other libs end
   ]

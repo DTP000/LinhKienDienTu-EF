@@ -47,10 +47,7 @@
                     return [
                         `   <button type="button" class="btn btn-sm bg-secondary edit-category" data-category-id="${row.id}" data-toggle="modal" data-target="#CategoryEditModal">`,
                         `       <i class="fas fa-pencil-alt"></i> ${l('Edit')}`,
-                        '   </button>',
-                        `   <button type="button" class="btn btn-sm bg-danger delete-category" data-category-id="${row.id}" data-category-name="${row.name}">`,
-                        `       <i class="fas fa-trash"></i> ${l('Delete')}`,
-                        '   </button>',
+                        '   </button>'
                     ].join('');
                 }
             }
@@ -73,18 +70,11 @@
                 _$modal.modal('hide');
                 _$form[0].reset();
                 abp.notify.info(l('SavedSuccessfully'));
-                _$catgorysTable.ajax.reload();
+                _$categorysTable.ajax.reload();
             })
             .always(function () {
                 abp.ui.clearBusy(_$modal);
             });
-    });
-
-    $(document).on('click', '.delete-category', function () {
-        var categoryId = $(this).attr("data-category-id");
-        var categoryName = $(this).attr('data-category-name');
-
-        deleteCategory(categoryId, categoryName);
     });
 
     $(document).on('click', '.edit-category', function (e) {
@@ -107,24 +97,6 @@
         _$categorysTable.ajax.reload();
     });
 
-    function deleteCategory(categoryId, categoryName) {
-        abp.message.confirm(
-            abp.utils.formatString(
-                l('AreYouSureWantToDelete'),
-                categoryName),
-            null,
-            (isConfirmed) => {
-                if (isConfirmed) {
-                    _categoryService.delete({
-                        id: categoryId
-                    }).done(() => {
-                        abp.notify.info(l('SuccessfullyDeleted'));
-                        _$categorysTable.ajax.reload();
-                    });
-                }
-            }
-        );
-    }
 
     _$modal.on('shown.bs.modal', () => {
         _$modal.find('input:not([type=hidden]):first').focus();

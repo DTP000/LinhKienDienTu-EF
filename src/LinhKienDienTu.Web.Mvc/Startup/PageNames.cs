@@ -9,5 +9,6 @@
         public const string Roles = "Roles"; 
         public const string Categories = "Danh mục"; 
         public const string Products = "Sản phẩm"; 
+        public const string Order = "Đơn Hàng"; 
     }
 }
