@@ -58,7 +58,7 @@
                 render: (data, type, row, meta) => {
                     var actions = [];
                     actions.push(
-                        `  <img alt="Avatar" class="table-avatar" src="./img/${row.urlImage}">`
+                        `  <img alt="Avatar" class="table-avatar" src="${row.urlImage}" height="100px">`
                     )
                     return actions.join('');
                 }
