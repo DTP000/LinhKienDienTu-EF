@@ -22,6 +22,7 @@ namespace LinhKienDienTu.Orders.Dto
 
         [DefaultValue(1)]
         public OrderStatus OrderStatus { get; set; }
+        public string NameOrderStatus { get; set; }
         [DefaultValue(0)]
         public List<OrderDetailDto> OrderDetails { get; set; }
         public long UserId { get; set; }

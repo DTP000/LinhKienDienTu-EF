@@ -1,0 +1,53 @@
+﻿@using LinhKienDienTu.Web.Models.Common.Modals
+@model LinhKienDienTu.Web.Models.Products.EditProductModalViewModel
+@{
+    Layout = null;
+}
+@await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("View")+" "+L("Product")))
+<form name="ProductViewModal" role="form" class="form-horizontal">
+    <div class="modal-body">
+        <div class="modal-body">
+            <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="CategoryName">@L("CategoryName")</label>
+            <div class="col-md-9">
+                <select asp-for="CategoryId" asp-items="@ViewBag.CategoryItems" class="form-control">
+                    @*<option selected value="">--Tất cả--</option>*@
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="productname">@L("ProductName")</label>
+            <div class="col-md-9">
+                <input asp-for="Name" class="form-control" required maxlength="32" minlength="2">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="productprice">@L("ProductPrice")</label>
+            <div class="col-md-9">
+                <input asp-for="Price" class="form-control input-amount text-right" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="productquantity">@L("ProductQuantity")</label>
+            <div class="col-md-9">
+                <input asp-for="Quantity" class="form-control text-right" required>
+            </div>
+        </div>
+        @*<div class="form-group row">
+            <label class="col-md-3 col-form-label" for="producturlimage">@L("ProductUrlImage")</label>
+            <div class="col-md-9">
+                <input asp-for="UrlImage" type="file" class="form-control avatarImageFile" required>
+            </div>
+        </div>*@
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="productdescr">@L("ProductDescr")</label>
+            <div class="col-md-9">
+                <textarea asp-for="Descr" class="form-control" rows="3" required aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+            </div>
+        </div>
+        <img alt="" id="img" src="" alt="your image" width="360px">
+        </div>
+    </div>
+</form>
+
+
